@@ -1,10 +1,27 @@
 import { NavLink, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import sidebarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
 
 function Sidebar({sidebar, setSidebar}) {
+    const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (sidebar && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                setSidebar(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [sidebar, setSidebar]);
+
     return (
-        <nav id="sidebar" className={`sidebar ${sidebar ? "sidebar-active" : ""}`}>
+        <>
+        <div className={`sidebar-background ${sidebar ? "sidebar-background-active" : ""}`}></div>
+        <nav id="sidebar" ref={sidebarRef} className={`sidebar ${sidebar ? "sidebar-active" : ""}`}>
             <div>
                 <Link to="/">
                     <img
@@ -32,6 +49,7 @@ function Sidebar({sidebar, setSidebar}) {
             </ul>
             
         </nav>
+        </>
     );
 }
 
