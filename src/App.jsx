@@ -18,7 +18,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects imgUrl={"https://media.istockphoto.com/id/479842074/photo/empty-road-at-building-exterior.jpg?s=612x612&w=0&k=20&c=SbyfZGN0i2O_QPLCdBcu9vhuzbQvTz4bGEn-lIzrN0E="}/>} />
-            <Route path="/contact-us" element={<Contact />} />
+            <Route path="/contact-us" element={<Contact imgUrl={"https://www.shutterstock.com/image-photo/stunning-view-new-york-city-600nw-2500167629.jpg"}/>} />
             <Route path="/about-us" element={<About />} />
             <Route path="*" element={<NotFound />} />
         </Routes>

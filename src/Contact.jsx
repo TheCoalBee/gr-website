@@ -8,10 +8,34 @@
 
 import Heading from "./components/Heading";
 
-function Contact() {
+function Contact({imgUrl}) {
   return (
     <main id="contact-us">
-        <Heading title={"Contact Us"} imgUrl={"https://www.shutterstock.com/image-photo/stunning-view-new-york-city-600nw-2500167629.jpg"}/>
+        <img className="background" src={imgUrl}></img>
+
+        <Heading title={"Contact Us"}/>
+
+        <form action="POST">
+          <h1>Send Us a Message</h1>
+          <p>Fill in the form below and get in touch with our team!</p>
+
+          <label htmlFor="name">
+            Name
+            <input placeholder="John Smith" name="name" type="text" />
+          </label>
+
+          <label htmlFor="email">
+            E-mail
+            <input placeholder="johnsmith@gmail.com" name="email" type="email" />
+          </label>
+
+          <label htmlFor="message">
+            Message
+            <textarea rows="5" placeholder="How can I get my free quote?" name="message" type="textarea" />
+          </label>
+
+          <button type="button">Submit</button>
+        </form>
     </main>
   );
 }
