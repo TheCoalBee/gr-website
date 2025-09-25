@@ -13,6 +13,7 @@
     --gray:rgb(60, 63, 66);
     --white:#FFFFFF;
     --side-padding:20%;
+    height:100%;
 }
 
 /* Header */
@@ -115,7 +116,7 @@
 
 /* Hero */
 #hero {
-    height:100vh;
+    height:100dvh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -152,9 +153,7 @@
 
 #hero img {
     filter: brightness(75%) blur(4px);
-    height:100%;
-    transform: scale(1.05); /* zooms in a little */
-    object-fit: cover;
+    transform: scale(1.10); /* zooms in a little */
 }
 
 @media (min-width:1100px) {
@@ -224,8 +223,7 @@
 
 .background {
     position: fixed;
-    height: 100%;
-    background-size:cover;
+    height: 100svh;
     filter: blur(4px); 
     z-index: -1; 
 }
