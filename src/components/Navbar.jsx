@@ -2,10 +2,10 @@
  * Tabs to add? Services, Why Choose Us, 
  * Timeline of Process: Step 1 consultation, step 2 planning, step 3 build, step 4 completion
  */
-
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
+import navbarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -24,7 +24,7 @@ function Navbar() {
         <nav id="nav">
             <Link to="/">
                 <img
-                    src="src/assets/G&R Constructors, Inc_Option-01-blue-white.png"
+                    src={navbarLogo}
                     alt="G&R Logo"
                 />
             </Link>

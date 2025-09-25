@@ -1,5 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import sidebarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
 
 function Sidebar({sidebar, setSidebar}) {
     const [scrolled, setScrolled] = useState(false);
@@ -14,11 +15,11 @@ function Sidebar({sidebar, setSidebar}) {
     }, []);
 
     return (
-        <nav id="sidebar" className={`sidebar ${!sidebar ? "sidebar-active" : ""}`}>
+        <nav id="sidebar" className={`sidebar ${sidebar ? "sidebar-active" : ""}`}>
             <div>
             <Link to="/">
                 <img
-                    src="src/assets/G&R Constructors, Inc_Option-01-blue-white.png"
+                    src={sidebarLogo}
                     alt="G&R Logo"
                 />
             </Link>
