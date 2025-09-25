@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const threshold = window.innerHeight * 0.05;
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      setScrolled(window.scrollY > threshold);
     };
 
     window.addEventListener("scroll", handleScroll);

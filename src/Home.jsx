@@ -14,6 +14,7 @@ import CallToAction from "./components/CallToAction";
 function Home() {
   return (
     <main id="home">
+        <img className="background" src="https://www.bauwise.com/wp-content/uploads/2023/04/AdobeStock_290512663-scaled.webp" alt="" />
         <Hero />
 
         <ContentSection>

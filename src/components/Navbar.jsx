@@ -8,19 +8,9 @@ import Sidebar from "./Sidebar";
 import navbarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
 
 function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
     const [sidebar, setSidebar] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-        setScrolled(window.scrollY > 100);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    return (
+    return (<>
         <nav id="nav">
             <Link to="/">
                 <img
@@ -43,9 +33,9 @@ function Navbar() {
 
             <i className="fa-solid fa-bars" onClick={() => setSidebar(!sidebar)}></i>
 
-            <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
-
         </nav>
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
+        </>
     );
 }
 
