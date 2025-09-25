@@ -83,7 +83,7 @@
     background-color: lightslategray;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 999;
     display:flex;
     flex-direction: column;
 }
@@ -334,6 +334,9 @@
 
 .project-carousel {
     padding:1rem;
+    width:100%;
+    aspect-ratio: 3/2;
+    background-color: blue;
 }
 
 .project-info {
@@ -360,3 +363,93 @@
 a:visited {
     color:inherit;
 }
+
+
+/* Image carousel */
+/* Basic styling — tweak to fit your site */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* viewport maintains the visible window */
+.carousel-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* track is a flex row of slides */
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+
+/* each slide takes the full viewport width */
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-user-drag: none;
+  overflow: hidden;
+}
+
+/* image fills slide, preserves aspect with object-fit */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: rgba(0,0,0,0.45);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel-arrow.left { left: 12px; }
+.carousel-arrow.right { right: 12px; }
+
+/* indicators */
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+}
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+  cursor: pointer;
+}
+.indicator.active { background: white; }
+
+/* empty fallback */
+.carousel.empty { padding: 1rem; text-align: center; }

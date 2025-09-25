@@ -1,9 +1,11 @@
+import ImageCarousel from "./ImageCarousel";
+
 function Project({project}) {
   return (
     <article className="project">
       <div className="project-carousel">
         {/* Image carousel logic */}
-        <img src={project.images[0]} alt="" />
+        <ImageCarousel images={project.images} autoplay={true} autoplayDelay={5000} aspectRatio="4/3" />
       </div>
       <div className="project-info">
         <h1>{project.title}</h1>
