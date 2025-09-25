@@ -12,9 +12,12 @@ function Sidebar({sidebar, setSidebar}) {
             }
         }
 
+        document.body.style.overflow = sidebar ? "hidden" : "";
+
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
+            document.body.style.overflow = "";
         };
     }, [sidebar, setSidebar]);
 
