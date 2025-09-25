@@ -152,6 +152,16 @@
 
 #hero img {
     filter: brightness(75%) blur(4px);
+    height:100%;
+    transform: scale(1.05); /* zooms in a little */
+    object-fit: cover;
+}
+
+@media (min-width:1100px) {
+    #hero img {
+        min-width:100%;
+        height:auto;
+    }
 }
 
 /* Footer */
