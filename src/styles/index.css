@@ -5,15 +5,18 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 :root {
     --blue:#1479D7;
     --gray:rgb(60, 63, 66);
+    --black:#000;
+    --darkgray:#333;
     --white:#FFFFFF;
     --side-padding:20%;
-    background-color: rgba(60, 63, 66, 1);
+
+    background-color: rgb(60, 63, 66);
 }
 
 /* Header */
@@ -22,7 +25,7 @@
     left:0;
     right:0;
     transition: background-color 0.2s ease;
-    z-index:1;
+    z-index:2;
 }
 
 .header-transparent {
@@ -96,7 +99,7 @@
     right: 0;
     height:100lvh;
     width:75vw;
-    background-color: lightslategray;
+    background-color: var(--gray);
     transform: translateX(100%);
     transition: all 0.3s ease-in-out;
     z-index: 999;
@@ -257,7 +260,7 @@
 
 .background {
     position: fixed;
-    height: 100lvh;
+    background-size: cover;
     z-index: -1; 
     filter: brightness(75%) blur(4px);
     transform: scale(1.10); /* zooms in a little */
@@ -266,20 +269,24 @@
 /* Content Block */
 .content-block {
     background-color: #fff;
-    padding: 1rem 2rem;
-    gap:20px;
+    padding: 2rem;
+    margin: 2rem;
+    gap:2rem;
     display:flex;
     flex-direction: column;
 }
 .content-block div {
-    flex:1;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
 }
 .content-block h1 {
-    font-size:40px;
+    font-size:2rem;
 }
 .content-block p {
-    line-height: 2;
+    line-height: 2rem;
 }
+
 .content-block img {
     height:100%;
     width:100%;
@@ -296,21 +303,21 @@
 #call-to-action {
     display:flex;
     flex-direction: column;
-    gap:20px;
+    gap:2rem;
     background-color:var(--blue);
     color:white;
-    padding:50px var(--side-padding);
+    padding:2rem;
 }
 
 #call-to-action h1 {
-    font-size:40px;
+    font-size:2rem;
 }
 
 #call-to-action button {
     background-color: var(--blue);
     border:1px solid white;
-    font-size:24px;
-    padding: 10px 40px;
+    font-size:1rem;
+    padding: 1rem 2rem;
     transition: all 0.1s ease;
     color:white;
     font-weight:bold;
@@ -328,7 +335,8 @@
 }
 #call-to-action div {
     display:flex;
-    gap:20px;
+    flex-direction: column;
+    gap:1rem;
     justify-content: center;
 }
 
@@ -353,7 +361,6 @@
     padding:1rem;
     width:100%;
     aspect-ratio: 3/2;
-    background-color: blue;
 }
 
 .project-info {
@@ -415,6 +422,59 @@ a:visited {
     color:inherit;
 }
 
+/* About us */
+#departments {
+    background-color: white;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.team-members {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:2rem;
+    gap:2rem;
+}
+
+.team-members section {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.team-member img {
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+.team-member {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding:1rem;
+}
+
+.team-member-info {
+    display:flex;
+    flex-direction: column;
+}
+
+.team-member-info h1 {
+    font-size:2rem;
+}
+.team-member-info h2 {
+    font-size:1.5rem;
+    font-weight:normal;
+    color:var(--darkgray);
+}
+
+.team-member {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
 /* Image carousel */
 /* Basic styling — tweak to fit your site */
