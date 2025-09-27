@@ -70,7 +70,6 @@ ul a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 2rem;
 }
 /* Container for li items */
 #nav ul {
@@ -126,7 +125,6 @@ ul a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 2rem;
 }
 
 .sidebar div img {
@@ -145,12 +143,10 @@ ul a {
 }
 
 #sidebar i:hover, #nav i:hover {
-    transform: scale(1.05);
     cursor:pointer;
 }
 
 .sidebar li {
-    padding:1rem 2rem;
     font-size:2rem;
     border-top:1px solid rgba(255, 255, 255, 0.4);
 }
@@ -169,8 +165,6 @@ ul a {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    padding:0 2rem;
-    gap:1rem;
     color:white;
 }
 
@@ -182,7 +176,6 @@ ul a {
     background-color: var(--blue);
     font-size:1.5rem;
     transition: border 0.1s ease;
-    padding:1rem;
     color:white;
     font-weight:bolder;
     
@@ -198,8 +191,6 @@ ul a {
 
 /* Footer */
 #footer {
-    padding:2rem;
-    gap:2rem;
     text-align: center;
     box-shadow: var(--box-shadow);
     background-color: rgba(60, 63, 66, 0.9);
@@ -211,12 +202,11 @@ ul a {
 }
 
 #footer-grid {
-    gap:2rem;
+
 }
 #footer-grid div ul {
     display:flex;
     flex-direction: column;
-    gap:0.5rem;
 }
 
 #footer-grid h2 {
@@ -225,7 +215,7 @@ ul a {
 }
 
 #footer-legal {
-    gap:1rem;
+    align-items: center;
 }
 
 #footer-legal img {
@@ -239,7 +229,6 @@ ul a {
 
 /* Page Heading */
 .heading h1 {
-    padding:8rem 2rem 3rem 2rem;
     font-size: 3rem;
     text-align: center;
     color:white;
@@ -258,11 +247,8 @@ ul a {
 /* Content Block */
 .content-block {
     background-color: #fff;
-    padding: 2rem;
-    gap:2rem;
 }
 .content-block div {
-    gap:1rem;
 }
 .content-block h1 {
     font-size:2rem;
@@ -278,15 +264,12 @@ ul a {
 }
 
 .content-section {
-    gap:10px;
 }
 
 /* Call to action */
 #call-to-action {
-    gap:2rem;
     background-color:var(--blue);
     color:white;
-    padding:2rem;
 }
 
 #call-to-action h1 {
@@ -297,7 +280,6 @@ ul a {
     background-color: var(--blue);
     border:1px solid white;
     font-size:1rem;
-    padding: 1rem 2rem;
     transition: all 0.1s ease;
     color:white;
     font-weight:bold;
@@ -311,10 +293,8 @@ ul a {
     background-color: white;
     color:var(--blue);
     cursor:pointer;
-    transform: scale(1.05);
 }
 #call-to-action div {
-    gap:1rem;
 }
 
 /* Projects */
@@ -330,14 +310,11 @@ ul a {
 }
 
 .project-carousel {
-    padding:1rem;
     width:100%;
     aspect-ratio: 3/2;
 }
 
 .project-info {
-    padding:2rem 1rem;
-    gap:1rem;
 }
 .project-info i {
     width:1rem;
@@ -354,8 +331,6 @@ ul a {
 
 /* Contact form */
 #contact-us form {
-    padding:2rem;
-    gap:2rem;
     display:inherit;
     flex-direction: inherit;
     background-color: white;
@@ -365,11 +340,9 @@ ul a {
 #contact-us label {
     display:flex;
     flex-direction: column;
-    gap:0.5rem;
 }
 #contact-us input, #contact-us textarea, #contact-us button {
     font-size:1rem;
-    padding:1rem;
     border: 1px solid black;
     box-shadow: var(--box-shadow);
     background-color: white;
@@ -390,18 +363,16 @@ a:visited {
 /* About us */
 #departments {
     background-color: white;
-    padding:2rem;
-    gap:2rem;
+
 }
 
 .team-members {
     text-align: center;
     font-size:2rem;
-    gap:2rem;
+
 }
 
 .team-members section {
-    gap:2rem;
 }
 .team-member img {
     height:100%;
@@ -410,8 +381,6 @@ a:visited {
 }
 
 .team-member {
-    gap:1rem;
-    padding:1rem;
 }
 
 .team-member-info h1 {
@@ -500,7 +469,6 @@ a:visited {
   transform: translateX(-50%);
   bottom: 10px;
   display: flex;
-  gap: 8px;
   z-index: 1;
 }
 .indicator {
@@ -514,4 +482,6 @@ a:visited {
 .indicator.active { background: white; }
 
 /* empty fallback */
-.carousel.empty { padding: 1rem; text-align: center; }
+.carousel.empty {
+    text-align: center; 
+}
