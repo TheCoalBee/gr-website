@@ -7,6 +7,7 @@
 
 import Heading from "./components/Heading";
 import TeamMembers from "./components/TeamMembers";
+import CallToAction from "./components/CallToAction";
 
 function About({imgUrl}) {
   let departments = [
@@ -55,6 +56,8 @@ function About({imgUrl}) {
             return <TeamMembers key={index} department={department}/>
           })}
         </section>
+
+        <CallToAction />
     </main>
   );
 }

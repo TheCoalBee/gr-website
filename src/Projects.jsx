@@ -7,6 +7,7 @@
 
 import Heading from "./components/Heading";
 import Project from "./components/Project";
+import CallToAction from "./components/CallToAction";
 
 function Projects({imgUrl}) {
   let projects = [
@@ -67,6 +68,8 @@ function Projects({imgUrl}) {
             return <Project key={index} project={project} />
           })}
         </section>
+
+        <CallToAction />
     </main>
   );
 }
