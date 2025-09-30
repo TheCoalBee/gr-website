@@ -20,13 +20,21 @@ function Home() {
         <ContentSection>
           <ContentBlock 
             alignment="left" 
-            wordContent={<ContentText header="Built to Last..." paragraph="Winegardner has been serving Southern and Central California since 1977. At Winegardner, we believe that investing in people is the key to our success. Our people are not only great at what they do but also great people to work with. They are friendly, approachable, and always willing to go the extra mile to ensure customer satisfaction. We believe that building strong relationships with our clients is essential to our long-term success, and our people are at the heart of those relationships."/>}
-            imageContent={<img src="https://media.istockphoto.com/id/1420678520/photo/building-site-at-sunset.jpg?s=612x612&w=0&k=20&c=HoDUK1RxsH78Fj9D34nao_MUTbf-vR3G97zUWMtES4k=" />}
+            wordContent={<ContentText header="Building with Precision" paragraph="At G&R Constructors, every project is approached with attention to detail and expert craftsmanship. From foundations to finishing touches, we take pride in delivering work that stands the test of time. Precision isn’t just a promise—it’s our standard."/>}
+            imageContent={<img src="https://media.istockphoto.com/id/1420678520/photo/building-site-at-sunset.jpg?s=612x612&w=0&k=20&c=HoDUK1RxsH78Fj9D34nao_MUTbf-vR3G97zUWMtES4k="/>}
+            theme="light"
           />
           <ContentBlock 
             alignment="right" 
-            wordContent={<ContentText header="Built to Last..." paragraph="Winegardner has been serving Southern and Central California since 1977. At Winegardner, we believe that investing in people is the key to our success. Our people are not only great at what they do but also great people to work with. They are friendly, approachable, and always willing to go the extra mile to ensure customer satisfaction. We believe that building strong relationships with our clients is essential to our long-term success, and our people are at the heart of those relationships."/>}
+            wordContent={<ContentText header="Trusted Experience, Lasting Results" paragraph="With years of experience in the construction industry, G&R Constructors has earned a reputation for reliability and quality. We combine proven methods with modern innovation to create structures that not only meet today’s needs but also support tomorrow’s growth."/>}
             imageContent={<img src="https://t4.ftcdn.net/jpg/00/68/63/23/360_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg" />}
+            theme="dark"
+          />
+          <ContentBlock 
+            alignment="left" 
+            wordContent={<ContentText header="Your Vision, Our Commitment" paragraph="We believe every build begins with a vision. At G&R Constructors, we work closely with clients to turn ideas into reality, ensuring clear communication and dedication at every stage. Your goals become our mission, and your success is the foundation we build upon."/>}
+            imageContent={<img src="https://media.istockphoto.com/id/1420678520/photo/building-site-at-sunset.jpg?s=612x612&w=0&k=20&c=HoDUK1RxsH78Fj9D34nao_MUTbf-vR3G97zUWMtES4k="/>}
+            theme="light"
           />
         </ContentSection>
 

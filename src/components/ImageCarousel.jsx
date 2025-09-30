@@ -1,9 +1,9 @@
 // InfiniteCarousel.jsx
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 export default function ImageCarousel({
-  images = [],                // array of image src strings
-  startIndex = 0,             // logical start (0..images.length-1)
+  images = [],                
+  startIndex = 0,             
   autoplay = true,
   autoplayDelay = 4000,
   showIndicators = true,
@@ -14,10 +14,8 @@ export default function ImageCarousel({
   const count = imgs.length;
   const hasMany = count > 1;
 
-  // If we have clones: track indices are 0..(count+1)
-  // real slides start at 1..count, so initial = startIndex + 1
   const initialIndex = Math.min(Math.max(startIndex, 0), Math.max(0, count - 1)) + 1;
-  const [index, setIndex] = useState(initialIndex); // track index including clones
+  const [index, setIndex] = useState(initialIndex);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPlaying, setIsPlaying] = useState(Boolean(autoplay) && hasMany);
   const trackRef = useRef(null);
@@ -95,17 +93,6 @@ export default function ImageCarousel({
       });
     }
   };
-
-  // Keyboard navigation
-  useEffect(() => {
-    function onKey(e) {
-      if (e.key === "ArrowLeft") setIndex(i => i - 1);
-      if (e.key === "ArrowRight") setIndex(i => i + 1);
-      if (e.key === " ") setIsPlaying(p => !p);
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
 
   // Keep index valid when images array changes
   useEffect(() => {
@@ -186,7 +173,7 @@ export default function ImageCarousel({
       onMouseLeave={onMouseLeave}
     >
       {showArrows && hasMany && (
-        <button aria-label="Previous" className="carousel-arrow left" onClick={() => setIndex(i => i - 1)}>‹</button>
+        <button aria-label="Previous" className="carousel-arrow left" onClick={() => setIndex(i => i - 1)}><i class="fa-solid fa-angle-left"></i></button>
       )}
 
       <div className="carousel-viewport">
@@ -211,7 +198,7 @@ export default function ImageCarousel({
       </div>
 
       {showArrows && hasMany && (
-        <button aria-label="Next" className="carousel-arrow right" onClick={() => setIndex(i => i + 1)}>›</button>
+        <button aria-label="Next" className="carousel-arrow right" onClick={() => setIndex(i => i + 1)}><i class="fa-solid fa-angle-right"></i></button>
       )}
 
       {showIndicators && hasMany && (

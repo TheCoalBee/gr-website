@@ -5,7 +5,7 @@ function TeamMember({teamMember}) {
         
         <div className="team-member-info">
             <h1>{teamMember.name}</h1>
-            <h2>{teamMember.role}</h2>
+            <p>{teamMember.role}</p>
         </div>
     </article>
   );

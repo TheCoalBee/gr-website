@@ -15,10 +15,13 @@ function Contact({imgUrl}) {
 
         <Heading title={"Contact Us"}/>
 
-        <form action="POST">
-          <h1>Send Us a Message</h1>
-          <p>Fill in the form below and get in touch with our team!</p>
+        
 
+        <form action="POST">
+          <div>
+            <h1>Send Us a Message</h1>
+            <p>Fill in the form below and get in touch with our team!</p>
+          </div>
           <label htmlFor="name">
             Name
             <input placeholder="John Smith" name="name" type="text" />

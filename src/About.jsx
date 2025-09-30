@@ -17,12 +17,12 @@ function About({imgUrl}) {
         {
           name: "Name Name",
           role: "Office Manager",
-          picture: "https://as1.ftcdn.net/jpg/00/65/11/80/1000_F_65118027_7hYshdPKHSDLQo0ZTqjjNRDojhGXyJiv.jpg"
+          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
         },
         {
           name: "Name Name",
           role: "Payroll",
-          picture: "https://as1.ftcdn.net/jpg/00/65/11/80/1000_F_65118027_7hYshdPKHSDLQo0ZTqjjNRDojhGXyJiv.jpg"
+          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
         }
       ]
     },
@@ -32,12 +32,12 @@ function About({imgUrl}) {
         {
           name: "Name Name",
           role: "Project Manager",
-          picture: "https://as1.ftcdn.net/jpg/00/65/11/80/1000_F_65118027_7hYshdPKHSDLQo0ZTqjjNRDojhGXyJiv.jpg"
+          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
         },
         {
           name: "Name Name",
           role: "General Superintendent",
-          picture: "https://as1.ftcdn.net/jpg/00/65/11/80/1000_F_65118027_7hYshdPKHSDLQo0ZTqjjNRDojhGXyJiv.jpg"
+          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
         }
       ]
     },
