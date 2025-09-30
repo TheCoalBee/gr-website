@@ -25,16 +25,7 @@ function Sidebar({sidebar, setSidebar}) {
         <>
         <div className={`sidebar-background ${sidebar ? "sidebar-background-active" : ""}`}></div>
         <nav id="sidebar" ref={sidebarRef} className={`sidebar ${sidebar ? "sidebar-active" : ""}`}>
-            <div>
-                <Link to="/">
-                    <img
-                        src={sidebarLogo}
-                        alt="G&R Logo"
-                        onClick={() => setSidebar(!sidebar)}
-                    />
-                </Link>
-                <i className="fa-solid fa-xmark" onClick={() => setSidebar(!sidebar)}></i>
-            </div>
+            <i className="fa-solid fa-xmark" onClick={() => setSidebar(!sidebar)}></i>
 
             <ul>
                 <li>

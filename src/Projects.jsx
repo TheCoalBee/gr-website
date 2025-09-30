@@ -63,7 +63,7 @@ function Projects({imgUrl}) {
 
         <Heading title={"Projects"} />
 
-        <section>
+        <section className="projects">
           {projects.map((project, index) => {
             return <Project key={index} project={project} />
           })}
