@@ -366,10 +366,8 @@ p, ul {
 .project {
     gap:var(--content-gap);
     padding: var(--content-gap) 0; 
-    flex: 1;
-    min-width:350px;
-    width:100%;
-    max-width:33%;
+    flex:1;
+    min-width:300px;
 }
 
 .project img {
@@ -635,6 +633,10 @@ a:visited {
     .content-block div {
         flex:1;
     }
+
+    .project {
+    }
+
     #nav {
         gap:2rem;
     }
