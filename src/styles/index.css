@@ -264,14 +264,12 @@ p, ul {
 .heading h1 {
     text-shadow: var(--box-shadow);
     font-size: 3rem;
-    text-align:center;
     color:white;
     text-transform: uppercase;
 }
 .heading p {
     color: var(--white);
     font-size:var(--text-size);
-    text-align:center;
     text-shadow: var(--box-shadow);
 }
 
