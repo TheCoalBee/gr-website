@@ -23,7 +23,7 @@
     --heading-bottom-padding:3rem;
     --content-gap:2rem;
     --smaller-content-gap:1rem;
-    --text-size:1.1rem;
+    --text-size:1rem;
     --heading-size:2rem;
     --large-heading-size:3rem;
 
@@ -201,9 +201,10 @@ p, ul {
     transition: all 0.1s ease;
     color:var(--white);
     font-weight:bolder;
-    padding:calc(1rem - 3px);
+    padding:calc(1rem - 3px) calc(2rem);
     box-shadow: var(--box-shadow);
     text-transform: uppercase;
+    border-radius:0.5rem;
 }
 
 #hero button {
@@ -365,8 +366,10 @@ p, ul {
 .project {
     gap:var(--content-gap);
     padding: var(--content-gap) 0; 
-    flex:1;
-    max-width:700px;
+    flex: 1;
+    min-width:350px;
+    width:100%;
+    max-width:33%;
 }
 
 .project img {
@@ -425,6 +428,7 @@ p, ul {
     resize:none;
     padding:calc(1rem - 3px);
     color: var(--darkgray);
+    border-radius:0.5rem;
 }
 
 #contact-us button {
@@ -454,6 +458,11 @@ p, ul {
 }
 #contact-points {
     gap:var(--smaller-content-gap);
+}
+
+#contact-points p {
+    display: flex;
+    align-items: center;
 }
 
 #contact-form {
@@ -616,7 +625,7 @@ a:visited {
     }
 }
 
-@media (min-width:1100px) {
+@media (min-width:800px) {
     .content-block {
         flex-direction:row;
         align-items: center;
@@ -626,10 +635,15 @@ a:visited {
     .content-block div {
         flex:1;
     }
+    #nav {
+        gap:2rem;
+    }
 
     #nav ul {
+        flex:1;
         display:flex;
-        gap:5rem;
+        justify-content: right;
+        gap:10vw;
     }
 
     #nav i {

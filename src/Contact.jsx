@@ -1,10 +1,3 @@
-/**
- * direct phone/email with icons for quick reach
- * Request a quote
- * Get in touch
- * FAQ (How to request a quote? What areas are serviced? Do you handle permits? etc)
- */
-
 import Heading from "./components/Heading";
 
 function ContactInfo() {
@@ -15,6 +8,17 @@ function ContactInfo() {
         <p><i className="fa-solid fa-phone fa-fw"></i>(555) 555-5555</p>
         <p><i className="fa-solid fa-location-dot fa-fw"></i>XXXXX Job address, Yucapia, CA</p>
         <p><i className="fa-solid fa-envelope fa-fw"></i>contact@gnr.com</p>
+        <p><i className="fa-solid fa-clock"></i>
+          <span>
+            Monday: 7:00am - 3:00pm<br />
+            Tuesday: 7:00am - 3:00pm<br />
+            Wednesday: 7:00am - 3:00pm<br />
+            Thursday: 7:00am - 3:00pm<br />
+            Friday: 7:00am - 3:00pm<br />
+            Saturday: Closed<br />
+            Sunday: Closed<br />
+            </span>
+        </p>
       </div>
     </section>  
   )
