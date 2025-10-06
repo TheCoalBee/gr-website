@@ -61,7 +61,7 @@ function Projects({imgUrl}) {
     <main id="projects">
         <img className="background" src={imgUrl}></img>
 
-        <Heading title={"Projects"} />
+        <Heading title={"Projects"} content={"From concept to completion, every project tells our story of precision, craftsmanship, and commitment. Explore the work that defines G&R Constructors."}/>
 
         <section className="projects">
           {projects.map((project, index) => {

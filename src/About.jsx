@@ -46,12 +46,9 @@ function About({imgUrl}) {
     <main id="about-us">
         <img className="background" src={imgUrl}></img>
 
-        <Heading title={"About Us"} />
+        <Heading title={"About Us"} content={"Here at G&R Constructors, we build more than structures — we build trust, integrity, and lasting relationships. Meet the team driving excellence from the ground up."}/>
 
         <section id="departments">
-          {/*projects.map((project, index) => {
-            return <Project key={index} project={project} />
-          })*/}
           {departments.map((department, index) => {
             return <TeamMembers key={index} department={department}/>
           })}

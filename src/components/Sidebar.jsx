@@ -1,6 +1,5 @@
-import { NavLink, Link } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
-import sidebarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
+import { NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 function Sidebar({sidebar, setSidebar}) {
     const sidebarRef = useRef(null);
@@ -25,7 +24,7 @@ function Sidebar({sidebar, setSidebar}) {
         <>
         <div className={`sidebar-background ${sidebar ? "sidebar-background-active" : ""}`}></div>
         <nav id="sidebar" ref={sidebarRef} className={`sidebar ${sidebar ? "sidebar-active" : ""}`}>
-            <i className="fa-solid fa-xmark" onClick={() => setSidebar(!sidebar)}></i>
+            <i className="fa-solid fa-xmark fa-fw" onClick={() => setSidebar(!sidebar)}></i>
 
             <ul>
                 <li>

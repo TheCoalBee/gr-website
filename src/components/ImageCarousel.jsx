@@ -173,7 +173,7 @@ export default function ImageCarousel({
       onMouseLeave={onMouseLeave}
     >
       {showArrows && hasMany && (
-        <button aria-label="Previous" className="carousel-arrow left" onClick={() => setIndex(i => i - 1)}><i className="fa-solid fa-angle-left"></i></button>
+        <button aria-label="Previous" className="carousel-arrow left" onClick={() => setIndex(i => i - 1)}><i className="fa-solid fa-angle-left fa-fw"></i></button>
       )}
 
       <div className="carousel-viewport">
@@ -198,7 +198,7 @@ export default function ImageCarousel({
       </div>
 
       {showArrows && hasMany && (
-        <button aria-label="Next" className="carousel-arrow right" onClick={() => setIndex(i => i + 1)}><i className="fa-solid fa-angle-right"></i></button>
+        <button aria-label="Next" className="carousel-arrow right" onClick={() => setIndex(i => i + 1)}><i className="fa-solid fa-angle-right fa-fw"></i></button>
       )}
 
       {showIndicators && hasMany && (
