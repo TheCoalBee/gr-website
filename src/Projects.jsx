@@ -1,13 +1,8 @@
-/**
- * Coming soon section
- * Fake projects for now?
- * Services offered
- * Conceptual designs, mockups, inspiration images
- */
+import './styles/projects.css'
+import Heading from "./components/misc/Heading";
+import Project from "./components/projects/Project";
+import CallToAction from "./components/misc/CallToAction";
 
-import Heading from "./components/Heading";
-import Project from "./components/Project";
-import CallToAction from "./components/CallToAction";
 
 function Projects({imgUrl}) {
   let projects = [

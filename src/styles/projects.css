@@ -1,0 +1,48 @@
+/*
+
+General:
+    top padding
+    side padding
+    content-gap (space between pieces of content.. 2 / 3rem)
+    header-gap (space between header and paragraph.. 2rem)
+    para-gap (space between paragraphs.. 1rem)
+
+Heading:
+    heading top padding
+    heading bottm padding is going to be equal to content gap
+*/
+
+/* Projects container (main content) */
+.projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: var(--top-padding) var(--side-padding);
+    gap:var(--content-gap);
+    background-color: var(--white);
+}
+
+/* Project container (individual project) */
+.project {
+    gap:var(--para-gap);
+    flex:1;
+    min-width:300px;
+}
+
+.project-carousel {
+    aspect-ratio: 3/2;
+}
+
+.project-info {
+    gap: var(--para-gap);
+}
+.project-info i {
+    width:1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-right:1rem;
+    color:var(--blue);
+}
+.project-info h1 {
+    font-size:var(--header-text-size);
+    text-transform: uppercase;
+}

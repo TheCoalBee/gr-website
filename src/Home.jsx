@@ -5,11 +5,11 @@
  * Rotating testimonials
  */
 
-import Hero from "./components/Hero";
-import ContentBlock from "./components/ContentBlock";
-import ContentText from "./components/ContentText";
-import ContentSection from "./components/ContentSection";
-import CallToAction from "./components/CallToAction";
+import Hero from "./components/home/Hero";
+import ContentBlock from "./components/home/ContentBlock";
+import ContentText from "./components/home/ContentText";
+import ContentSection from "./components/home/ContentSection";
+import CallToAction from "./components/misc/CallToAction";
 
 function Home() {
   return (

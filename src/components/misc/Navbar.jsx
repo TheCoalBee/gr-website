@@ -5,7 +5,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
-import navbarLogo from '../assets/G&R Constructors, Inc_Option-01-blue-white.png';
+import navbarLogo from '../../assets/G&R Constructors, In.png';
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -21,17 +21,20 @@ function Navbar() {
 
             <ul>
                 <li>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/notfound">Services</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact-us">Contact Us</NavLink>
+                    <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about-us">About Us</NavLink>
                 </li>
+                <li>
+                    <NavLink className="nav-special" to="/contact-us">Contact Us</NavLink>
+                </li>
             </ul>
 
-            <i className="fa-solid fa-bars" onClick={() => setSidebar(!sidebar)}></i>
+            <i className="fa-solid fa-bars fa-fw" onClick={() => setSidebar(!sidebar)}></i>
 
         </nav>
         <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>

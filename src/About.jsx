@@ -5,9 +5,9 @@
  * Certifications, insurance, licenses
  */
 
-import Heading from "./components/Heading";
-import TeamMembers from "./components/TeamMembers";
-import CallToAction from "./components/CallToAction";
+import Heading from "./components/misc/Heading";
+import TeamMembers from "./components/about/TeamMembers";
+import CallToAction from "./components/misc/CallToAction";
 
 function About({imgUrl}) {
   let departments = [

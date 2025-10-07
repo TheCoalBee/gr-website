@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "../misc/Navbar";
 import { useEffect, useState } from "react";
 
 function Header() {
