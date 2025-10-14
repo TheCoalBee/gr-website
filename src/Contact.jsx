@@ -1,4 +1,5 @@
 import Heading from "./components/misc/Heading";
+import OurPartners from "./components/misc/OurPartners"
 
 function ContactInfo() {
   return (
@@ -54,6 +55,8 @@ function Contact({imgUrl}) {
 
           <ContactForm />
         </div>
+
+        <OurPartners />
 
     </main>
   );

@@ -2,6 +2,7 @@ import './styles/projects.css'
 import Heading from "./components/misc/Heading";
 import Project from "./components/projects/Project";
 import CallToAction from "./components/misc/CallToAction";
+import OurPartners from './components/misc/OurPartners';
 
 
 function Projects({imgUrl}) {
@@ -63,6 +64,8 @@ function Projects({imgUrl}) {
             return <Project key={index} project={project} />
           })}
         </section>
+
+        <OurPartners />
 
         <CallToAction />
     </main>

@@ -9,13 +9,13 @@ function ContentBlock({ alignment = "left", wordContent, imageContent, theme="li
     <article className={`content-block ${theme}`}>
       {isLeft ? (
         <>
-          <div>{wordContent}</div>
-          <div>{imageContent}</div>
+          <div className="text-content">{wordContent}</div>
+          <div className="image-content">{imageContent}</div>
         </>
       ) : (
         <>
-          <div>{imageContent}</div>
-          <div>{wordContent}</div>
+          <div className="image-content">{imageContent}</div>
+          <div className="text-content">{wordContent}</div>
         </>
       )}
     </article>

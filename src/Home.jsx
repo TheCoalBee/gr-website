@@ -10,6 +10,7 @@ import ContentBlock from "./components/home/ContentBlock";
 import ContentText from "./components/home/ContentText";
 import ContentSection from "./components/home/ContentSection";
 import CallToAction from "./components/misc/CallToAction";
+import OurPartners from "./components/misc/OurPartners";
 
 function Home() {
   return (
@@ -37,6 +38,8 @@ function Home() {
             theme="light"
           />
         </ContentSection>
+
+        <OurPartners />
 
         <CallToAction />
     </main>
