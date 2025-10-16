@@ -5,6 +5,7 @@
  * Certifications, insurance, licenses
  */
 
+import "./styles/about.css";
 import Heading from "./components/misc/Heading";
 import TeamMembers from "./components/about/TeamMembers";
 import CallToAction from "./components/misc/CallToAction";
@@ -17,14 +18,29 @@ function About({imgUrl}) {
       name: "Accounting",
       teamMembers: [
         {
-          name: "Name Name",
+          name: "Joe Smith",
           role: "Office Manager",
-          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
         },
         {
-          name: "Name Name",
+          name: "Bonnie Clyde",
           role: "Payroll",
-          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
         }
       ]
     },
@@ -32,14 +48,34 @@ function About({imgUrl}) {
       name: "Operations",
       teamMembers: [
         {
-          name: "Name Name",
+          name: "Casey Ricks",
           role: "Project Manager",
-          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
         },
         {
-          name: "Name Name",
+          name: "Steve Grode",
           role: "General Superintendent",
-          picture: "https://static.wikia.nocookie.net/anchorman/images/1/10/Ron_burgundy.jpg/revision/latest?cb=20120329160125"
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+        },
+        {
+          name: "Bonnie Clyde",
+          role: "Payroll",
+          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
         }
       ]
     },
@@ -59,7 +95,7 @@ function About({imgUrl}) {
 
         <section id="departments">
           {departments.map((department, index) => {
-            return <TeamMembers key={index} department={department}/>
+            return <><h1>{department.name}</h1><TeamMembers key={index} department={department}/></>
           })}
         </section>
 

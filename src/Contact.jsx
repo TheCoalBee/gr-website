@@ -56,8 +56,6 @@ function Contact({imgUrl}) {
           <ContactForm />
         </div>
 
-        <OurPartners />
-
     </main>
   );
 }

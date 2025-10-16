@@ -1,0 +1,55 @@
+
+/* About us */
+#departments {
+    background-color: var(--white);
+    padding: var(--top-padding) var(--side-padding);
+    gap:var(--content-gap);
+}
+.team-members {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:var(--content-gap);
+    background-color: var(--white);
+}
+.team-member img {
+    width:100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    border-radius:0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+#departments > h1 {
+    font-size:2rem;
+    text-transform: uppercase;
+}
+
+.team-member {
+    min-width:0;
+    gap:var(--para-gap);
+}
+
+.team-member-info {
+    gap:var(--smaller-content-gap);
+}
+
+.team-member-info h1 {
+    font-size:1.5rem;
+}
+.team-member-info p {
+    font-size:var(--text-size);
+}
+
+
+@media (min-width:800px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1440px) {
+    .team-members {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

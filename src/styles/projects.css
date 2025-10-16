@@ -14,8 +14,8 @@ Heading:
 
 /* Projects container (main content) */
 .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
     padding: var(--top-padding) var(--side-padding);
     gap:var(--content-gap);
     background-color: var(--white);
@@ -23,9 +23,8 @@ Heading:
 
 /* Project container (individual project) */
 .project {
+    min-width:0;
     gap:var(--para-gap);
-    flex:1;
-    min-width:300px;
 }
 
 .project-carousel {
@@ -45,4 +44,18 @@ Heading:
 .project-info h1 {
     font-size:var(--header-text-size);
     text-transform: uppercase;
+}
+
+
+@media (min-width:800px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1440px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
