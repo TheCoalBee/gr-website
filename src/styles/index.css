@@ -534,6 +534,7 @@ a:visited {
   width:100%;
   box-shadow: var(--box-shadow);
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 /* viewport maintains the visible window */
@@ -654,8 +655,14 @@ a:visited {
 
     .content-block {
         display:grid;
-        grid-template-columns: 2fr 3fr;
         gap: var(--top-padding);
+    }
+
+    .content-block.right {
+        grid-template-columns: 3fr 2fr;
+    }
+    .content-block.left {
+        grid-template-columns: 2fr 3fr;
     }
 }
 

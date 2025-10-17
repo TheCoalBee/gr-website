@@ -6,7 +6,7 @@ function ContentBlock({ alignment = "left", wordContent, imageContent, theme="li
   const isLeft = alignment === "left";
 
   return (
-    <article className={`content-block ${theme}`}>
+    <article className={`content-block ${theme} ${alignment}`}>
       {isLeft ? (
         <>
           <div className="text-content">{wordContent}</div>

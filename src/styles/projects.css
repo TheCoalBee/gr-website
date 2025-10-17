@@ -13,12 +13,21 @@ Heading:
 */
 
 /* Projects container (main content) */
+.all-projects {
+    background-color: var(--white);
+    padding: var(--top-padding) var(--side-padding);
+    gap:var(--content-gap);
+}
 .projects {
     display:grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: var(--top-padding) var(--side-padding);
     gap:var(--content-gap);
     background-color: var(--white);
+}
+
+.all-projects > h1 {
+    font-size:2rem;
+    text-transform: uppercase;
 }
 
 /* Project container (individual project) */
@@ -42,8 +51,7 @@ Heading:
     color:var(--blue);
 }
 .project-info h1 {
-    font-size:var(--header-text-size);
-    text-transform: uppercase;
+    font-size:1.5rem;
 }
 
 
