@@ -61,6 +61,9 @@ ul {
 a {
     text-decoration: none;
 }
+h1 {
+    font-weight: normal;
+}
 
 p, ul {
     line-height:1.8;
@@ -233,9 +236,13 @@ p, ul {
 }
 
 #hero h1 {
-    font-size:4rem;
+    font-size:3rem;
     text-shadow: var(--box-shadow);
     text-transform: uppercase;
+}
+
+#hero h1 span {
+    font-weight:bolder;
 }
 
 #hero button, #call-to-action a, #contact-us button {
@@ -311,6 +318,7 @@ p, ul {
     color:white;
     text-transform: uppercase;
     text-align: center;
+    font-weight:bold;
 }
 .heading p {
     color: var(--white);
