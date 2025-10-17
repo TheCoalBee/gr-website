@@ -8,7 +8,9 @@ function Project({project}) {
       </div>
       <div className="project-info">
         <h1>{project.title}</h1>
-        <p><i className="fa-regular fa-map fa-fw"></i>{project.address}</p>
+        <p><i className="fa-regular fa-map fa-fw"></i>
+          {project.address}
+        </p>
         <p><i className="fa-regular fa-calendar fa-fw"></i>{project.description}</p>
         <p><i className="fa-regular fa-ruler fa-fw"></i>{project.measure}</p>
       </div>

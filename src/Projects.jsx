@@ -8,49 +8,23 @@ import OurPartners from './components/misc/OurPartners';
 function Projects({imgUrl}) {
   let projects = [
     {
-      title: "Project title 1",
-      description: "2677 sq. feet",
-      measure: "2677 sq. ft",
-      address: "XXXXX Address Way, San Diego, CA",
+      title: "Westside Library Expansion Project",
+      description: "03/28/2025",
+      measure: "11,384 sq. ft",
+      address: "9191 Base Line Rd, Rancho Cucamonga, CA 91730",
       images: [
-        "https://thumbs.dreamstime.com/b/many-tall-buildings-under-construction-cranes-20004270.jpg",
-        "https://media.istockphoto.com/id/450837501/photo/new-industry-construction.jpg?s=612x612&w=0&k=20&c=OB2tQl6xfHQwrJPlLEwRhfUKIdOiqV7oKJ-tCGYj-TY=",
-        "https://media.gettyimages.com/id/170616024/photo/concrete-highrise-construction-site.jpg?s=612x612&w=gi&k=20&c=UoL4CqK6T_X8j8ybEKnnUeubJ8OG2GUofEciDRkojsc="
+        "src/assets/projects/Archibald Library.png",
       ]
     },
     {
-      title: "Project title 1",
-      description: "2677 sq. feet",
-      measure: "2677 sq. ft",
-      address: "XXXXX Address Way, San Diego, CA",
+      title: "Granger Junior High School",
+      description: "12/12/2024",
+      measure: "15,652 sq. ft",
+      address: "2101 Granger Ave, National City, CA 91950",
       images: [
-        "https://thumbs.dreamstime.com/b/many-tall-buildings-under-construction-cranes-20004270.jpg",
-        "https://media.istockphoto.com/id/450837501/photo/new-industry-construction.jpg?s=612x612&w=0&k=20&c=OB2tQl6xfHQwrJPlLEwRhfUKIdOiqV7oKJ-tCGYj-TY=",
-        "https://media.gettyimages.com/id/170616024/photo/concrete-highrise-construction-site.jpg?s=612x612&w=gi&k=20&c=UoL4CqK6T_X8j8ybEKnnUeubJ8OG2GUofEciDRkojsc="
+        "src/assets/projects/Granger JHS Building.png",
       ]
     },
-    {
-      title: "Project title 1",
-      description: "2677 sq. feet",
-      measure: "2677 sq. ft",
-      address: "XXXXX Address Way, San Diego, CA",
-      images: [
-        "https://thumbs.dreamstime.com/b/many-tall-buildings-under-construction-cranes-20004270.jpg",
-        "https://media.istockphoto.com/id/450837501/photo/new-industry-construction.jpg?s=612x612&w=0&k=20&c=OB2tQl6xfHQwrJPlLEwRhfUKIdOiqV7oKJ-tCGYj-TY=",
-        "https://media.gettyimages.com/id/170616024/photo/concrete-highrise-construction-site.jpg?s=612x612&w=gi&k=20&c=UoL4CqK6T_X8j8ybEKnnUeubJ8OG2GUofEciDRkojsc="
-      ]
-    },
-    {
-      title: "Project title 1",
-      description: "2677 sq. feet",
-      measure: "2677 sq. ft",
-      address: "XXXXX Address Way, San Diego, CA",
-      images: [
-        "https://thumbs.dreamstime.com/b/many-tall-buildings-under-construction-cranes-20004270.jpg",
-        "https://media.istockphoto.com/id/450837501/photo/new-industry-construction.jpg?s=612x612&w=0&k=20&c=OB2tQl6xfHQwrJPlLEwRhfUKIdOiqV7oKJ-tCGYj-TY=",
-        "https://media.gettyimages.com/id/170616024/photo/concrete-highrise-construction-site.jpg?s=612x612&w=gi&k=20&c=UoL4CqK6T_X8j8ybEKnnUeubJ8OG2GUofEciDRkojsc="
-      ]
-    }
   ]
 
   return (
