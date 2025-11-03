@@ -18,14 +18,22 @@ function About({imgUrl}) {
       name: "Accounting",
       teamMembers: [
         {
-          name: "Frankie Henderson",
-          role: "Labor Compliance and Payroll",
-          picture: "src/assets/our-people/_EBP5645Antz.jpg",
-        },
-        {
           name: "Alex Ayala",
           role: "Controller",
           picture: "src/assets/our-people/_EBP5769Antz.jpg",
+          offset: "0 10%"
+        },
+        {
+          name: "Jackie Duran",
+          role: "Accounting",
+          picture: "src/assets/our-people/winegardner-5593.jpg",
+          offset: "0 12%"
+        },
+        {
+          name: "Frankie Henderson",
+          role: "Labor Compliance and Payroll",
+          picture: "src/assets/our-people/_EBP5645Antz.jpg",
+          offset: "0 23%"
         }
       ]
     },
@@ -33,9 +41,22 @@ function About({imgUrl}) {
       name: "Operations",
       teamMembers: [
         {
-          name: "Casey Ricks",
+          name: "Steve Grode",
+          role: "President",
+          picture: "src/assets/our-people/winegardner-5495.jpg",
+          offset: "0% 25%",
+        },
+        {
+          name: "Armando Ramirez",
+          role: "Project Estimator",
+          picture: "src/assets/our-people/_EBP5705Antz.jpg",
+          offset: "0% 10%",
+        },
+        {
+          name: "Chris Contla",
           role: "Project Manager",
-          picture: "src/assets/our-people/Casey_Ricks-7940Antz.jpg",
+          picture: "https://kepner-tregoe.com/wp-content/uploads/2025/06/68-1.jpg",
+          offset: "0% 25%",
         },
       ]
     },

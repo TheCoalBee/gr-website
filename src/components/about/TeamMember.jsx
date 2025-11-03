@@ -4,6 +4,8 @@ function TeamMember({teamMember}) {
         <div className="team-member-picture">
           <img
           src={teamMember.picture}
+          style={{
+            objectPosition: teamMember.offset}}
           alt=""/>
         </div>
         
