@@ -18,29 +18,14 @@ function About({imgUrl}) {
       name: "Accounting",
       teamMembers: [
         {
-          name: "Joe Smith",
-          role: "Office Manager",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+          name: "Frankie Henderson",
+          role: "Labor Compliance and Payroll",
+          picture: "src/assets/our-people/_EBP5645Antz.jpg",
         },
         {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+          name: "Alex Ayala",
+          role: "Controller",
+          picture: "src/assets/our-people/_EBP5769Antz.jpg",
         }
       ]
     },
@@ -50,33 +35,8 @@ function About({imgUrl}) {
         {
           name: "Casey Ricks",
           role: "Project Manager",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+          picture: "src/assets/our-people/Casey_Ricks-7940Antz.jpg",
         },
-        {
-          name: "Steve Grode",
-          role: "General Superintendent",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        },
-        {
-          name: "Bonnie Clyde",
-          role: "Payroll",
-          picture: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-        }
       ]
     },
   ]
@@ -95,7 +55,7 @@ function About({imgUrl}) {
 
         <section id="departments">
           {departments.map((department, index) => {
-            return <><h1>{department.name}</h1><TeamMembers key={index} department={department}/></>
+            return <div key={index}><h1>{department.name}</h1><TeamMembers department={department}/></div>
           })}
         </section>
 

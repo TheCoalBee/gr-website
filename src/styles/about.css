@@ -3,7 +3,7 @@
 #departments {
     background-color: var(--white);
     padding: var(--top-padding) var(--side-padding);
-    gap:var(--content-gap);
+    gap:var(--top-padding);
 }
 .team-members {
     display:grid;
@@ -14,12 +14,15 @@
 .team-member img {
     width:100%;
     object-fit: cover;
-    aspect-ratio: 3/2;
-    border-radius:0.5rem;
     box-shadow: var(--box-shadow);
+    aspect-ratio: 3/2;
 }
 
-#departments > h1 {
+#departments > div {
+    gap: var(--content-gap);
+}
+
+#departments > div > h1 {
     font-size:2rem;
     text-transform: uppercase;
 }
@@ -27,6 +30,10 @@
 .team-member {
     min-width:0;
     gap:var(--para-gap);
+}
+
+.team-member-picture {
+    border-radius: 0.5rem;
 }
 
 .team-member-info {
