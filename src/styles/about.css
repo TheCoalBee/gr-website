@@ -16,6 +16,7 @@
     object-fit: cover;
     box-shadow: var(--box-shadow);
     aspect-ratio: 3/2;
+    border-radius:0.5rem;
 }
 
 #departments > div {
@@ -30,10 +31,6 @@
 .team-member {
     min-width:0;
     gap:var(--para-gap);
-}
-
-.team-member-picture {
-    border-radius: 0.5rem;
 }
 
 .team-member-info {
@@ -51,6 +48,9 @@
 @media (min-width:800px) {
     .team-members {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .team-member-picture img {
+        aspect-ratio: 1/1;
     }
 }
 

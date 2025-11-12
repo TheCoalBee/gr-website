@@ -39,7 +39,7 @@ function Projects({imgUrl}) {
             alignment="right" 
             wordContent={<ContentText header="Our Project Portfolio" paragraph="Our portfolio reflects a commitment to excellence and precision in every project we undertake. Each engagement is approached with careful planning, innovative thinking, and attention to detail to ensure measurable results and lasting value. We take pride in delivering solutions that not only meet expectations but consistently exceed them."/>}
             imageContent={<img src="https://images.unsplash.com/photo-1516880711640-ef7db81be3e1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000"/>}
-            theme="dark"
+            theme="light"
           />
 
         <section className="all-projects">

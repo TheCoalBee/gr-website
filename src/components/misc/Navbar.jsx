@@ -17,6 +17,10 @@ function Navbar() {
                     src={navbarLogo}
                     alt="G&R Logo"
                 />
+                <img
+                    src={navbarLogo}
+                    alt="G&R Logo"
+                />
             </Link>
 
             <ul>
