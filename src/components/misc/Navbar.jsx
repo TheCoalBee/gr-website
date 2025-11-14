@@ -5,7 +5,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
-import navbarLogo from '../../assets/G&R Constructors, In.png';
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -14,11 +13,11 @@ function Navbar() {
         <nav id="nav">
             <Link to="/">
                 <img
-                    src={navbarLogo}
+                    src={"G&R Constructors, In.png"}
                     alt="G&R Logo"
                 />
                 <img
-                    src={navbarLogo}
+                    src={"G&R Constructors, In.png"}
                     alt="G&R Logo"
                 />
             </Link>

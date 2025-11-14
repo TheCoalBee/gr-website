@@ -1,5 +1,4 @@
 import { NavLink, Link } from "react-router-dom";
-import footerLogo from '../../assets/G&R Constructors, Inc_Option-01.png';
 
 function Footer() {
 	return (
@@ -50,7 +49,7 @@ function Footer() {
 
 			<section id="footer-legal">
 				<Link to="/">
-					<img src={footerLogo} alt="" />
+					<img src={'G&R Constructors, Inc_Option-01.png'} alt="" />
 				</Link>
 
 				<p>© 2025 G&R Constructors. All rights reserved.</p>
