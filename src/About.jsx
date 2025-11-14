@@ -20,7 +20,7 @@ function About({imgUrl}) {
         {
           name: "Alex Ayala",
           role: "Controller",
-          picture: "_EBP5769Antz.jpg",
+          picture: "EBP5769Antz.jpg",
           offset: "0 10%"
         },
         {
@@ -32,7 +32,7 @@ function About({imgUrl}) {
         {
           name: "Frankie Henderson",
           role: "Labor Compliance and Payroll",
-          picture: "_EBP5645Antz.jpg",
+          picture: "EBP5645Antz.jpg",
           offset: "0 23%"
         }
       ]
@@ -49,7 +49,7 @@ function About({imgUrl}) {
         {
           name: "Armando Ramirez",
           role: "Project Estimator",
-          picture: "_EBP5705Antz.jpg",
+          picture: "EBP5705Antz.jpg",
           offset: "0% 10%",
         },
         {
