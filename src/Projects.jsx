@@ -15,7 +15,7 @@ function Projects({imgUrl}) {
       measure: "11,384 sq. ft",
       address: "9191 Base Line Rd, Rancho Cucamonga, CA 91730",
       images: [
-        "public/Archibald Library.png",
+        "Archibald Library.png",
       ]
     },
     {
@@ -24,7 +24,7 @@ function Projects({imgUrl}) {
       measure: "15,652 sq. ft",
       address: "2101 Granger Ave, National City, CA 91950",
       images: [
-        "public/Granger JHS Building.png",
+        "Granger JHS Building.png",
       ]
     },
   ]
