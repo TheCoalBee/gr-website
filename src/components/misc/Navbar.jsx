@@ -12,11 +12,11 @@ function Navbar() {
     return (<>
         <nav id="nav">
             <Link to="/">
-                <img
+                <img loading="lazy"
                     src={"G&R Constructors, In.png"}
                     alt="G&R Logo"
                 />
-                <img
+                <img loading="lazy"
                     src={"G&R Constructors, In.png"}
                     alt="G&R Logo"
                 />

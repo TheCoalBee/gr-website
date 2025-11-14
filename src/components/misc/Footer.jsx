@@ -49,7 +49,7 @@ function Footer() {
 
 			<section id="footer-legal">
 				<Link to="/">
-					<img src={'G&R Constructors, Inc_Option-01.png'} alt="" />
+					<img loading="lazy" src={'G&R Constructors, Inc_Option-01.png'} alt="" />
 				</Link>
 
 				<p>© 2025 G&R Constructors. All rights reserved.</p>

@@ -46,7 +46,7 @@ function ContactForm() {
 function Contact({imgUrl}) {
   return (
     <main id="contact-us">
-        <img className="background" src={imgUrl}></img>
+        <img loading="lazy" className="background" src={imgUrl}></img>
 
         <Heading title={"Contact Us"} content={"Let’s start building together. Reach out to our team today and discover how G&R Constructors can bring your vision to life."}/>
 

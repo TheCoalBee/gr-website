@@ -2,7 +2,7 @@ function TeamMember({teamMember}) {
   return (
     <article className="team-member">
         <div className="team-member-picture">
-          <img
+          <img loading="lazy"
           src={teamMember.picture}
           style={{
             objectPosition: teamMember.offset}}
