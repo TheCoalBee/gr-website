@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -29,6 +29,5 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "vite": "^7.1.6"
-  },
-  "postbuild": "cp dist/index.html dist/notfound.html"
+  }
 }
