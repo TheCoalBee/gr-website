@@ -22,7 +22,7 @@ function Footer() {
 					</ul>
 				</div>
 
-				<div>
+				{/*<div>
 					<ul>
 						<h2>LEGAL</h2>
 						<li>
@@ -35,14 +35,14 @@ function Footer() {
 							<NavLink to="*">Terms of Service</NavLink>
 						</li>
 					</ul>
-				</div>
+				</div>*/}
 
 				<div>
 					<ul>
 						<h2>CONTACT</h2>
-						<li>XXX-XXX-XXXX</li>
-						<li>XXXXX Address Blvd # A <br />City, ST</li>
-						<li>CA License #XXXXXXX</li>
+						<li>(951) 440-6119</li>
+						<li>32147 Dunlap Blvd # B <br />Yucaipa, CA</li>
+						{/*<li>CA License #XXXXXXX</li>*/}
 					</ul>
 				</div>
 			</section>

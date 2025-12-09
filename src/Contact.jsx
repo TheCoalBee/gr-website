@@ -1,13 +1,12 @@
 import Heading from "./components/misc/Heading";
-import OurPartners from "./components/misc/OurPartners"
 
 function ContactInfo() {
   return (
     <section id="contact-info">
       <h1>Get in touch</h1>
       <div id="contact-points">
-        <p><i className="fa-solid fa-phone fa-fw"></i>(555) 555-5555</p>
-        <p><i className="fa-solid fa-location-dot fa-fw"></i>XXXXX Job address, Yucapia, CA</p>
+        <p><i className="fa-solid fa-phone fa-fw"></i>(951) 440-6119</p>
+        <p><i className="fa-solid fa-location-dot fa-fw"></i>32147 Dunlap Blvd # B <br /> Yucaipa, CA</p>
         <p><i className="fa-solid fa-envelope fa-fw"></i>contact@gnr.com</p>
         <p><i className="fa-solid fa-clock"></i>
           <span>
@@ -53,7 +52,7 @@ function Contact({imgUrl}) {
         <div className="contact-info">
           <ContactInfo />
 
-          <ContactForm />
+          {/*<ContactForm />*/}
         </div>
 
     </main>

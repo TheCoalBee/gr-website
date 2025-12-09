@@ -21,13 +21,13 @@ function Home() {
         <ContentSection>
           <ContentBlock 
             alignment="left" 
-            wordContent={<ContentText header="Building with Precision" paragraph="At G&R Constructors, we believe that real craftsmanship begins with integrity and ends with results that stand the test of time. Our team delivers commercial carpentry and interior construction with an unwavering focus on safety, precision, and professionalism. Every project - from start to finish - reflects our commitment to honest work, dependable production, and the highest standards of quality. Whether we are in the field or in the office, we do what we say we'll do and we do it right. Because for us, it's more than construction - it's about building trust, one job at a time."/>}
+            wordContent={<ContentText header="Building with Precision" paragraph="At G&R Constructors, integrity isn't a slogan, it's how we work. We show up, we're honest, and we keep our word. Our crew takes pride in commercial carpentry done safely and done right, with solid production that drives the projects and maintains schedules."/>}
             imageContent={<img loading="lazy" src="https://media.istockphoto.com/id/1420678520/photo/building-site-at-sunset.jpg?s=612x612&w=0&k=20&c=HoDUK1RxsH78Fj9D34nao_MUTbf-vR3G97zUWMtES4k="/>}
             theme="light"
           />
           <ContentBlock 
             alignment="right" 
-            wordContent={<ContentText header="Trusted Experience, Lasting Results" paragraph="With years of experience in the construction industry, G&R Constructors has earned a reputation for reliability and quality. We combine proven methods with modern innovation to create structures that not only meet today’s needs but also support tomorrow’s growth."/>}
+            wordContent={<ContentText header="Trusted Experience, Lasting Results" paragraph="We take care of our people and take pride in the craftsmanship we bring to every project. We stay focused, communicate openly, and put in the kind of steady, reliable work tha earns respect on and off the jobsite. Because for us, it's simple: when you work with integrity, focus on safety, and deliver consistent results, trust follows — and that's what we aim to build on every project."/>}
             imageContent={<img loading="lazy" src="https://t4.ftcdn.net/jpg/00/68/63/23/360_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg" />}
             theme="dark"
           />
@@ -39,7 +39,7 @@ function Home() {
           />
         </ContentSection>
 
-        <OurPartners />
+        {/*<OurPartners />*/}
 
         <CallToAction />
     </main>

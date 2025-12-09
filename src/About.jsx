@@ -55,7 +55,7 @@ function About({imgUrl}) {
         {
           name: "Chris Contla",
           role: "Project Manager",
-          picture: "https://kepner-tregoe.com/wp-content/uploads/2025/06/68-1.jpg",
+          picture: "https://t4.ftcdn.net/jpg/00/68/63/23/360_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg",
           offset: "0% 25%",
         },
       ]
@@ -75,7 +75,7 @@ function About({imgUrl}) {
           />
           <ContentBlock 
             alignment="right" 
-            wordContent={<ContentText header="Built on a Strong Foundation" paragraph="G&R Constructors traces its roots back to a group of lifelong builders who shared a vision for doing things differently. In 2025, founders James Grant and Michael Rivera combined decades of hands-on construction experience with a shared commitment to precision, reliability, and craftsmanship. What began as a small partnership taking on residential projects soon grew into a trusted name in commercial and custom builds across the region."/>}
+            wordContent={<ContentText header="Built on a Strong Foundation" paragraph="G&R Constructors was created by a team of lifelong builders who share a commitment to doing things the right way. With a focus on precision, reliability, and craftsmanship, the company has grown from a small partnership into a trusted provider of residential, commercial, and custom construction services. Today, G&R continues to build with integrity — delivering projects that stand the test of time."/>}
             imageContent={<img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lunch_atop_a_Skyscraper_-_Charles_Clyde_Ebbets.jpg/500px-Lunch_atop_a_Skyscraper_-_Charles_Clyde_Ebbets.jpg"/>}
             theme="dark"
           />

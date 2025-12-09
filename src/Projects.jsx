@@ -51,7 +51,7 @@ function Projects({imgUrl}) {
           </section>
         </section>
 
-        <OurPartners />
+        {/*<OurPartners />*/}
 
         <CallToAction />
     </main>
