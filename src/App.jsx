@@ -10,7 +10,7 @@ import NotFound from "./NotFound";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/gr-website">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <Header />
 

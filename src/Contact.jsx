@@ -7,7 +7,7 @@ function ContactInfo() {
       <div id="contact-points">
         <p><i className="fa-solid fa-phone fa-fw"></i>(951) 440-6119</p>
         <p><i className="fa-solid fa-location-dot fa-fw"></i>32147 Dunlap Blvd # B <br /> Yucaipa, CA</p>
-        <p><i className="fa-solid fa-envelope fa-fw"></i>contact@gnr.com</p>
+        <p><i className="fa-solid fa-envelope fa-fw"></i>info@grconstructors.com</p>
         <p><i className="fa-solid fa-clock"></i>
           <span>
             Monday: 7:00am - 3:00pm<br />
