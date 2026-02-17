@@ -31,10 +31,10 @@ function Footer() {
 				   <div>
 					   <ul>
 						   <h2>CLASSIFICATIONS</h2>
-						   <li>C-8 - Concrete</li>
-						   <li>B - General Building</li>
-						   <li>C-2 - Insulation and Acoustical</li>
-						   <li>C-9 - Drywall</li>
+						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-8" target="_blank" rel="noopener noreferrer">C-8 - Concrete</a></li>
+						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" target="_blank" rel="noopener noreferrer">B - General Building</a></li>
+						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-2" target="_blank" rel="noopener noreferrer">C-2 - Insulation and Acoustical</a></li>
+						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9" target="_blank" rel="noopener noreferrer">C-9 - Drywall</a></li>
 					   </ul>
 				   </div>
 

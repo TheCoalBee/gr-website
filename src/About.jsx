@@ -43,7 +43,7 @@ function About({imgUrl}) {
         {
           name: "Steve Grode",
           role: "President",
-          picture: "winegardner-5495.jpg",
+          picture: "winegardner-5495.png",
           offset: "0% 30%",
         },
         {
