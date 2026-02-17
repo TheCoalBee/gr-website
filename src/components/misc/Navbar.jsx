@@ -16,16 +16,16 @@ function Navbar() {
 
             <ul>
                 <li>
-                    <NavLink to="/services" viewTransition>Services</NavLink>
+                    <NavLink to="/services">Services</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" viewTransition>Projects</NavLink>
+                    <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about-us" viewTransition>About Us</NavLink>
+                    <NavLink to="/about-us">About Us</NavLink>
                 </li>
                 <li>
-                    <NavLink className="nav-special" to="/contact-us" viewTransition>Contact Us</NavLink>
+                    <NavLink className="nav-special" to="/contact-us">Contact Us</NavLink>
                 </li>
             </ul>
 

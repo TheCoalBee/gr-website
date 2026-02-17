@@ -3,6 +3,7 @@ import Heading from "./components/misc/Heading";
 import Project from "./components/projects/Project";
 import CallToAction from "./components/misc/CallToAction";
 import OurPartners from './components/misc/OurPartners';
+import ImageCarousel from "./components/projects/ImageCarousel";
 import ContentBlock from "./components/home/ContentBlock";
 import ContentText from "./components/home/ContentText"
 
@@ -11,34 +12,37 @@ function Projects({imgUrl}) {
   let projects = [
     {
       title: "Westside Library Expansion Project",
-      description: "03/28/2025",
       measure: "11,384 sq. ft",
-      address: "9191 Base Line Rd, Rancho Cucamonga, CA 91730",
       images: [
         "Archibald Library.png",
+      ],
+      scope: [
+        "Acoustical Ceiling Tile",
+        "Floating Acoustical Clouds",
       ]
     },
     {
       title: "Granger Junior High School",
-      description: "12/12/2024",
       measure: "15,652 sq. ft",
-      address: "2101 Granger Ave, National City, CA 91950",
       images: [
         "Granger JHS Building.png",
+      ],
+      scope: [
+        "Exterior Composite Cladding"
       ]
     },
   ]
 
   return (
     <main id="projects">
-        <img loading="lazy" className="background" src="/auto-images/projects-bg.jpg"></img>
+        <img loading="lazy" className="background" src={imgUrl} alt="Projects background" />
 
         <Heading title={"Projects"} content={"From concept to completion, every project tells our story of precision, craftsmanship, and commitment. Explore the work that defines G&R Constructors."}/>
 
         <ContentBlock 
-            alignment="right" 
-            wordContent={<ContentText header="Our Project Portfolio" paragraph="Our portfolio reflects a commitment to excellence and precision in every project we undertake. Each engagement is approached with careful planning, innovative thinking, and attention to detail to ensure measurable results and lasting value. We take pride in delivering solutions that not only meet expectations but consistently exceed them."/>}
-            imageContent={<img loading="lazy" src="/auto-images/projects-block.jpg"/>}
+            alignment="left" 
+            wordContent={<ContentText header="Our Portfolio" paragraph="Our portfolio reflects a commitment to excellence and precision in every project we undertake. Each engagement is approached with careful planning, innovative thinking, and attention to detail to ensure measurable results and lasting value. We take pride in delivering solutions that not only meet expectations but consistently exceed them."/>}
+            imageContent={<ImageCarousel images={["public/Archibald Library.png", "public/Granger JHS Building.png"]} />}
             theme="dark"
           />
 

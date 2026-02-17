@@ -17,6 +17,8 @@ export default function ImageCarousel({
   const initialIndex = Math.min(Math.max(startIndex, 0), Math.max(0, count - 1)) + 1;
   const [index, setIndex] = useState(initialIndex);
   const [isAnimating, setIsAnimating] = useState(false);
+  const animTimeoutRef = useRef(null);
+  const ANIMATION_DURATION = 500; // ms, adjust to match your CSS transition
   const [isPlaying, setIsPlaying] = useState(Boolean(autoplay) && hasMany);
   const trackRef = useRef(null);
   const timerRef = useRef(null);
@@ -25,27 +27,34 @@ export default function ImageCarousel({
   const display = hasMany ? [imgs[count - 1], ...imgs, imgs[0]] : [...imgs];
 
   // Helpers to move
-  const goTo = useCallback((next) => {
-    if (!hasMany) return;
+
+  // Helper to block navigation during animation
+  const startAnimationBlock = useCallback(() => {
     setIsAnimating(true);
+    if (animTimeoutRef.current) clearTimeout(animTimeoutRef.current);
+    animTimeoutRef.current = setTimeout(() => {
+      setIsAnimating(false);
+      animTimeoutRef.current = null;
+    }, ANIMATION_DURATION);
+  }, []);
+
+  const goTo = useCallback((next) => {
+    if (!hasMany || isAnimating) return;
+    startAnimationBlock();
     setIndex(next);
-  }, [hasMany]);
+  }, [hasMany, isAnimating, startAnimationBlock]);
 
   const prev = useCallback(() => {
-    if (!hasMany) return;
-    goTo(i => {
-      // not using previous state function here; compute using current index
-      setIndex(i => i - 1);
-      return null;
-    });
-    // simpler: just decrement
+    if (!hasMany || isAnimating) return;
+    startAnimationBlock();
     setIndex(i => i - 1);
-  }, [hasMany, goTo]);
+  }, [hasMany, isAnimating, startAnimationBlock]);
 
   const next = useCallback(() => {
-    if (!hasMany) return;
+    if (!hasMany || isAnimating) return;
+    startAnimationBlock();
     setIndex(i => i + 1);
-  }, [hasMany]);
+  }, [hasMany, isAnimating, startAnimationBlock]);
 
   // Autoplay
   useEffect(() => {
@@ -62,8 +71,7 @@ export default function ImageCarousel({
 
   // When transition ends, if we're on a clone we snap to the correct real slide
   const onTransitionEnd = () => {
-    setIsAnimating(false);
-    // if clones used:
+    // Don't set isAnimating here; handled by setTimeout
     if (!hasMany) return;
     // index can be 0 (first clone) -> snap to count (real last)
     if (index === 0) {
@@ -74,7 +82,6 @@ export default function ImageCarousel({
       el.style.transition = "none";
       setIndex(count);
       // force reflow then restore transition (so next transforms will animate)
-      // using requestAnimationFrame for safe reflow
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           if (el) el.style.transition = "";
@@ -173,7 +180,14 @@ export default function ImageCarousel({
       onMouseLeave={onMouseLeave}
     >
       {showArrows && hasMany && (
-        <button aria-label="Previous" className="carousel-arrow left" onClick={() => setIndex(i => i - 1)}><i className="fa-solid fa-angle-left fa-fw"></i></button>
+        <button
+          aria-label="Previous"
+          className="carousel-arrow left"
+          onClick={prev}
+          disabled={isAnimating}
+        >
+          <i className="fa-solid fa-angle-left fa-fw"></i>
+        </button>
       )}
 
       <div className="carousel-viewport">
@@ -198,7 +212,14 @@ export default function ImageCarousel({
       </div>
 
       {showArrows && hasMany && (
-        <button aria-label="Next" className="carousel-arrow right" onClick={() => setIndex(i => i + 1)}><i className="fa-solid fa-angle-right fa-fw"></i></button>
+        <button
+          aria-label="Next"
+          className="carousel-arrow right"
+          onClick={next}
+          disabled={isAnimating}
+        >
+          <i className="fa-solid fa-angle-right fa-fw"></i>
+        </button>
       )}
 
       {showIndicators && hasMany && (
@@ -212,7 +233,7 @@ export default function ImageCarousel({
                 aria-label={`Go to slide ${i + 1}`}
                 aria-selected={active}
                 className={`indicator ${active ? "active" : ""}`}
-                onClick={() => setIndex(i + 1)}
+                onClick={() => !isAnimating && setIndex(i + 1)}
               />
             );
           })}

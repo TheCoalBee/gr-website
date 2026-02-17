@@ -8,11 +8,10 @@ function Project({project}) {
       </div>
       <div className="project-info">
         <h1>{project.title}</h1>
-        <p><i className="fa-regular fa-map fa-fw"></i>
-          {project.address}
-        </p>
-        <p><i className="fa-regular fa-calendar fa-fw"></i>{project.description}</p>
-        <p><i className="fa-regular fa-ruler fa-fw"></i>{project.measure}</p>
+        {project.scope.map((item, index) => {
+          return <p key={index}><i className="fa-regular fa-hammer fa-fw"></i>{item}</p>
+        })}
+        <p><i className="fa-regular fa-hammer fa-fw"></i>{project.measure}</p>
       </div>
     </article>
   );

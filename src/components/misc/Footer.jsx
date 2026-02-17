@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<footer id="footer">
 			   <section style={{ width: '100%', textAlign: 'center', marginBottom: '2rem', fontWeight: 'bold', letterSpacing: '1px', textTransform: 'uppercase' }}>
-			   G&R Constructors, Inc. is proudly signatory to the carpenters, laborers, plasterers, and taper unions.
+			   G&R Constructors, Inc. is signatory to United Brotherhood of Carpenters and Joiners of America & International Union of Painters and Allied Trades
 			   </section>
 			<section id="footer-grid">
 				   <div>
@@ -31,7 +31,6 @@ function Footer() {
 				   <div>
 					   <ul>
 						   <h2>CLASSIFICATIONS</h2>
-						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-8" target="_blank" rel="noopener noreferrer">C-8 - Concrete</a></li>
 						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" target="_blank" rel="noopener noreferrer">B - General Building</a></li>
 						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-2" target="_blank" rel="noopener noreferrer">C-2 - Insulation and Acoustical</a></li>
 						   <li><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9" target="_blank" rel="noopener noreferrer">C-9 - Drywall</a></li>

@@ -1,9 +1,7 @@
 
 import './styles/projects.css';
 import Heading from "./components/misc/Heading";
-import Project from "./components/projects/Project";
 import CallToAction from "./components/misc/CallToAction";
-import OurPartners from './components/misc/OurPartners';
 import ContentBlock from "./components/home/ContentBlock";
 import ContentText from "./components/home/ContentText";
 
@@ -16,20 +14,20 @@ function Services({imgUrl}: {imgUrl?: string}) {
             "Historic Renovations",
             "Commercial",
             "Interiors",
-            "Healthcare/OSHPD",
+            "Healthcare/HCAI",
             "Higher Education"
         ],
         services: [
-            "Scaffolding",
             "Acoustical Ceilings",
-            "Metal Stud Framing",
+            "Acoustical/Tackable Wall Panels",
+            "Framing - Wood and Metal",
+            "Taping/Drywall",
             "Insulation",
-            "Design-Build/Design-Assist",
-            "Drywall",
-            "Specialty General Contracting",
+            "Exterior Cladding Systems and Composite Panels",
+            "Div 10 Specialities",
             "BIM",
-            "Rough Carpentry",
-            "Rainscreen and Exterior Cladding Systems"
+            "Design-Build/Design-Assist",
+            "Specialty General Contracting",
         ]
     };
 
@@ -48,16 +46,17 @@ function Services({imgUrl}: {imgUrl?: string}) {
 
 
                 <section className="all-projects">
-                    <h1>Market Sectors</h1>
-                    <ul style={{ listStyleType: 'disc', paddingLeft: '2rem' }}>
-                        {services.marketSectors.map((sector, idx) => (
-                            <li key={idx}>{sector}</li>
-                        ))}
-                    </ul>
                     <h1>Services</h1>
                     <ul style={{ listStyleType: 'disc', paddingLeft: '2rem' }}>
                         {services.services.map((service, idx) => (
                             <li key={idx}>{service}</li>
+                        ))}
+                    </ul>
+
+                    <h1>Market Sectors</h1>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '2rem' }}>
+                        {services.marketSectors.map((sector, idx) => (
+                            <li key={idx}>{sector}</li>
                         ))}
                     </ul>
                 </section>

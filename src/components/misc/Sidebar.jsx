@@ -31,6 +31,9 @@ function Sidebar({sidebar, setSidebar}) {
                     <NavLink onClick={() => setSidebar(!sidebar)} to="/">Home</NavLink>
                 </li>
                 <li>
+                    <NavLink onClick={() => setSidebar(!sidebar)} to="/services">Services</NavLink>
+                </li>
+                <li>
                     <NavLink onClick={() => setSidebar(!sidebar)} to="/projects">Projects</NavLink>
                 </li>
                 <li>

@@ -3,7 +3,7 @@ export default function OurPartners() {
         <section id="our-partners">
             <h1>Our Trusted Partners</h1>
 
-            <p>We’re proud to collaborate with industry-leading suppliers, engineers, and local professionals who share our commitment to quality and reliability. Together, we deliver projects that stand the test of time.</p>
+            <p>We're proud to collaborate with industry-leading suppliers, engineers, and local professionals who share our commitment to quality and reliability. Together, we deliver projects that stand the test of time.</p>
             
             <div>
                 <img loading="lazy" src="https://thompsonbldg.com/wp-content/themes/thompson/img-logo-footer.png" alt="Thompson Building Materials logo" />

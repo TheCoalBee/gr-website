@@ -66,6 +66,11 @@ function ContactForm() {
     const subject = encodeURIComponent('Inquiry for G&R Constructors');
     const body = encodeURIComponent(message);
     window.location.href = `mailto:info@grconstructors.com?subject=${subject}&body=${body}`;
+    nameRef.current.value = '';
+    emailRef.current.value = '';
+    messageRef.current.value = '';
+    setInvalid({ name: false, email: false, message: false });
+    setSubmitted(false);
   };
 
   const inputStyle = (field) => ({
