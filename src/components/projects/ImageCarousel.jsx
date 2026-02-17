@@ -162,9 +162,7 @@ export default function ImageCarousel({
     };
   }, [index, autoplay, hasMany]);
 
-  // compute transform style
-  // Add a small offset to ensure images slide fully out of view
-  const transformStyle = { transform: `translateX(calc(-${index * 100}% - 1px))` };
+  const transformStyle = { transform: `translateX(-${index * 100}%)` };
 
   if (!imgs || imgs.length === 0) {
     return <div className="carousel empty">No images</div>;
