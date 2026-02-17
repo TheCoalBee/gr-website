@@ -4,8 +4,11 @@ import Heading from "./components/misc/Heading";
 import CallToAction from "./components/misc/CallToAction";
 import ContentBlock from "./components/home/ContentBlock";
 import ContentText from "./components/home/ContentText";
+import ImageCarousel from './components/projects/ImageCarousel';
 
-function Services({imgUrl}: {imgUrl?: string}) {
+import { useEffect } from 'react';
+
+function Services({imgUrl}) {
     const services = {
         marketSectors: [
             "Hospitality",
@@ -18,18 +21,29 @@ function Services({imgUrl}: {imgUrl?: string}) {
             "Higher Education"
         ],
         services: [
-            "Acoustical Ceilings",
-            "Acoustical/Tackable Wall Panels",
-            "Framing - Wood and Metal",
-            "Taping/Drywall",
-            "Insulation",
-            "Exterior Cladding Systems and Composite Panels",
-            "Div 10 Specialities",
-            "BIM",
-            "Design-Build/Design-Assist",
-            "Specialty General Contracting",
+            { name: "Acoustical Ceilings", image: "public/services-images/acoustical-ceilings.png" },
+            { name: "Acoustical/Tackable Wall Panels", image: "public/services-images/acoustical-tackable-wall-panels.png" },
+            { name: "Framing - Wood and Metal", image: "public/services-images/framing-wood-metal.png" },
+            { name: "Taping/Drywall", image: "public/services-images/taping-drywall.png" },
+            { name: "Insulation", image: "public/services-images/insulation.png" },
+            { name: "Exterior Cladding Systems and Composite Panels", image: "public/services-images/exterior-cladding-systems-1.png" },
+            { name: "Div 10 Specialities" },
+            { name: "BIM" },
+            { name: "Design-Build/Design-Assist" },
+            { name: "Specialty General Contracting" },
         ]
     };
+
+    // Preload carousel images
+    useEffect(() => {
+        const imagesToPreload = services.services
+            .filter(service => !!service.image)
+            .map(service => service.image);
+        imagesToPreload.forEach(src => {
+            const img = new window.Image();
+            img.src = src;
+        });
+    }, []);
 
     return (
         <main id="services">
@@ -40,7 +54,17 @@ function Services({imgUrl}: {imgUrl?: string}) {
                 <ContentBlock 
                         alignment="right" 
                        wordContent={<ContentText header="Our Services" paragraph="At G&R Constructors, we deliver a comprehensive range of services tailored to meet the unique needs of each project. Our experienced team ensures quality, safety, and efficiency at every stage. We partner closely with clients, architects, and engineers to bring visions to life (on time and on budget) while upholding the highest standards of craftsmanship and professionalism."/>}
-                        imageContent={<img loading="lazy" src="https://images.pexels.com/photos/224924/pexels-photo-224924.jpeg?cs=srgb&dl=pexels-asphotography-224924.jpg&fm=jpg"/>}
+                        imageContent={
+                            <ImageCarousel
+                                images={services.services
+                                    .filter(service => !!service.image)
+                                    .map(service => service.image)
+                                }
+                                aspectRatio="16/9"
+                                showIndicators={true}
+                                showArrows={true}
+                            />
+                        }
                         theme="dark"
                     />
 
@@ -49,7 +73,9 @@ function Services({imgUrl}: {imgUrl?: string}) {
                     <h1>Services</h1>
                     <ul style={{ listStyleType: 'disc', paddingLeft: '2rem' }}>
                         {services.services.map((service, idx) => (
-                            <li key={idx}>{service}</li>
+                            <li key={idx}>
+                                {service.name}
+                            </li>
                         ))}
                     </ul>
 
