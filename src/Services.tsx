@@ -35,7 +35,7 @@ function Services({imgUrl}: {imgUrl?: string}) {
 
     return (
         <main id="services">
-            <img loading="lazy" className="background" src="/services-background.jpg" alt="Services background" />
+            <img loading="lazy" className="background" src={imgUrl} alt="Services background" />
 
                 <Heading title={"Services"} content={"From concept to completion, every service tells our story of precision, craftsmanship, and commitment. Explore the work that defines G&R Constructors."}/>
 
