@@ -1,7 +1,3 @@
-/**
- * Tabs to add? Services, Why Choose Us, 
- * Timeline of Process: Step 1 consultation, step 2 planning, step 3 build, step 4 completion
- */
 import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
@@ -12,10 +8,6 @@ function Navbar() {
     return (<>
         <nav id="nav">
             <Link to="/">
-                <img loading="lazy"
-                    src={"G&R Constructors, In.png"}
-                    alt="G&R Logo"
-                />
                 <img loading="lazy"
                     src={"G&R Constructors, In.png"}
                     alt="G&R Logo"

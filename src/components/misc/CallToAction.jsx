@@ -6,7 +6,7 @@ function CallToAction() {
             <h1>Quality. Precision. Results.</h1>
             <p>Start your build with us today.</p>
             
-            <NavLink to="/contact-us">Get a free quote</NavLink>
+            <NavLink to="/contact-us">Contact Us</NavLink>
         </section>
     );
 }

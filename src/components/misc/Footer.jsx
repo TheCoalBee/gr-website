@@ -11,13 +11,17 @@ function Footer() {
 							<NavLink to="/">Home</NavLink>
 						</li>
 						<li>
+							<NavLink to="/services">Services</NavLink>
+						</li>
+						<li>
 							<NavLink to="/projects">Projects</NavLink>
 						</li>
 						<li>
-							<NavLink to="/contact-us">Contact Us</NavLink>
-						</li>
-						<li>
 							<NavLink to="/about-us">About Us</NavLink>
+						</li>
+
+						<li>
+							<NavLink to="/contact-us">Contact Us</NavLink>
 						</li>
 					</ul>
 				</div>
@@ -40,8 +44,8 @@ function Footer() {
 				<div>
 					<ul>
 						<h2>CONTACT</h2>
-						<li>(951) 440-6119</li>
-						<li>32147 Dunlap Blvd # B <br />Yucaipa, CA</li>
+						<li>(951) 440 - 6119</li>
+						<li>32147 Dunlap Blvd # B <br />Yucaipa, CA 92399</li>
 						{/*<li>CA License #XXXXXXX</li>*/}
 					</ul>
 				</div>

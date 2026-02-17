@@ -139,23 +139,10 @@ p, ul {
     transition: all 0.1s ease-in-out;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
-#nav img:nth-of-type(2) {
-    display:block;
-    z-index: -1;
-    position:absolute;
-    top:0;
-    left:0;
-    width: 7rem;
-    filter: brightness(0) contrast(100%) invert(40%) sepia(42%) saturate(7009%) hue-rotate(194deg) brightness(93%) contrast(84%);
-}
 
 #nav > a {
     transition: all 0.1s ease-in-out;
     position:relative;
-}
-
-#nav > a:hover img:nth-of-type(1) {
-  opacity: 0;
 }
 
 #nav img:hover, #nav i:hover {
