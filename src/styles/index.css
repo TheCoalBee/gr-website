@@ -625,22 +625,9 @@ a:visited {
     text-align: center; 
 }
 
-
-
 @media (min-width:600px) {
     :root {
         --side-padding:10%;
-    }
-
-    #footer-grid {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #footer-grid div {
-        flex:1;
-    }
-    #footer {
-        text-align: left;
     }
 }
 
@@ -670,6 +657,17 @@ a:visited {
     }
     .content-block.left {
         grid-template-columns: 2fr 3fr;
+    }
+
+    #footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer-grid div {
+        flex:1;
+    }
+    #footer {
+        text-align: left;
     }
 }
 

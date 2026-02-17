@@ -16,7 +16,7 @@ function Navbar() {
 
             <ul>
                 <li>
-                    <NavLink to="/notfound" viewTransition>Services</NavLink>
+                    <NavLink to="/services" viewTransition>Services</NavLink>
                 </li>
                 <li>
                     <NavLink to="/projects" viewTransition>Projects</NavLink>

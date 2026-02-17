@@ -3,28 +3,40 @@ import { NavLink, Link } from "react-router-dom";
 function Footer() {
 	return (
 		<footer id="footer">
+			   <section style={{ width: '100%', textAlign: 'center', marginBottom: '2rem', fontWeight: 'bold', letterSpacing: '1px', textTransform: 'uppercase' }}>
+			   G&R Constructors, Inc. is proudly signatory to the carpenters, laborers, plasterers, and taper unions.
+			   </section>
 			<section id="footer-grid">
-				<div>
-					<ul>
-						<h2>NAVIGATION</h2>
-						<li>
-							<NavLink to="/">Home</NavLink>
-						</li>
-						<li>
-							<NavLink to="/services">Services</NavLink>
-						</li>
-						<li>
-							<NavLink to="/projects">Projects</NavLink>
-						</li>
-						<li>
-							<NavLink to="/about-us">About Us</NavLink>
-						</li>
+				   <div>
+					   <ul>
+						   <h2>NAVIGATION</h2>
+						   <li>
+							   <NavLink to="/">Home</NavLink>
+						   </li>
+						   <li>
+							   <NavLink to="/services">Services</NavLink>
+						   </li>
+						   <li>
+							   <NavLink to="/projects">Projects</NavLink>
+						   </li>
+						   <li>
+							   <NavLink to="/about-us">About Us</NavLink>
+						   </li>
+						   <li>
+							   <NavLink to="/contact-us">Contact Us</NavLink>
+						   </li>
+					   </ul>
+				   </div>
 
-						<li>
-							<NavLink to="/contact-us">Contact Us</NavLink>
-						</li>
-					</ul>
-				</div>
+				   <div>
+					   <ul>
+						   <h2>CLASSIFICATIONS</h2>
+						   <li>C-8 - Concrete</li>
+						   <li>B - General Building</li>
+						   <li>C-2 - Insulation and Acoustical</li>
+						   <li>C-9 - Drywall</li>
+					   </ul>
+				   </div>
 
 				{/*<div>
 					<ul>
