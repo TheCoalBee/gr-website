@@ -32,10 +32,10 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="projects" element={<Projects imgUrl="public/projects-background.png" />} />
-        <Route path="services" element={<Services imgUrl="public/services-background.png" />} />
-        <Route path="contact-us" element={<Contact imgUrl="public/home-background.png" />} />
-        <Route path="about-us" element={<About imgUrl="public/about-background.png" />} />
+        <Route path="projects" element={<Projects imgUrl="projects-background.png" />} />
+        <Route path="services" element={<Services imgUrl="services-background.png" />} />
+        <Route path="contact-us" element={<Contact imgUrl="home-background.png" />} />
+        <Route path="about-us" element={<About imgUrl="about-background.png" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

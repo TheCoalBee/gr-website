@@ -21,12 +21,12 @@ function Services({imgUrl}) {
             "Higher Education"
         ],
         services: [
-            { name: "Acoustical Ceilings", image: "public/services-images/acoustical-ceilings.png" },
-            { name: "Acoustical/Tackable Wall Panels", image: "public/services-images/acoustical-tackable-wall-panels.png" },
-            { name: "Framing - Wood and Metal", image: "public/services-images/framing-wood-metal.png" },
-            { name: "Taping/Drywall", image: "public/services-images/taping-drywall.png" },
-            { name: "Insulation", image: "public/services-images/insulation.png" },
-            { name: "Exterior Cladding Systems and Composite Panels", image: "public/services-images/exterior-cladding-systems-1.png" },
+            { name: "Acoustical Ceilings", image: "services-images/acoustical-ceilings.png" },
+            { name: "Acoustical/Tackable Wall Panels", image: "services-images/acoustical-tackable-wall-panels.png" },
+            { name: "Framing - Wood and Metal", image: "services-images/framing-wood-metal.png" },
+            { name: "Taping/Drywall", image: "services-images/taping-drywall.png" },
+            { name: "Insulation", image: "services-images/insulation.png" },
+            { name: "Exterior Cladding Systems and Composite Panels", image: "services-images/exterior-cladding-systems-1.png" },
             { name: "Div 10 Specialities" },
             { name: "BIM" },
             { name: "Design-Build/Design-Assist" },
