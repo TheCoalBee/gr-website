@@ -70,13 +70,13 @@ function About({imgUrl}) {
        <ContentBlock 
             alignment="left" 
             wordContent={<ContentText header="The Team That Builds Your Vision" paragraph="G&R Constructors was founded on a simple idea: great work comes from great people. Behind every successful project is a team that makes it happen. Our skilled professionals combine innovation, precision, and teamwork to deliver results you can rely on every time."/>}
-            imageContent={<img loading="lazy" src="public/about-us-block-1.png"/>}
+            imageContent={<img loading="lazy" src="about-us-block-1.png"/>}
             theme="light"
           />
           <ContentBlock 
             alignment="right" 
             wordContent={<ContentText header="Built on a Strong Foundation" paragraph="G&R Constructors was created by a team of lifelong builders who share a commitment to doing things the right way. With a focus on precision, reliability, and craftsmanship, the company has grown from a small partnership into a trusted provider of residential, commercial, and custom construction services. Today, G&R continues to build with integrity — delivering projects that stand the test of time."/>}
-            imageContent={<img loading="lazy" src="public/about-us-block-2.png"/>}
+            imageContent={<img loading="lazy" src="about-us-block-2.png"/>}
             theme="dark"
           />
 
