@@ -195,6 +195,9 @@ p, ul {
     transform: translateX(100%);
     z-index: 2;
     text-align: center;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #sidebar i {
@@ -475,6 +478,26 @@ p, ul {
     border:3px solid white;
     color:var(--white);
     cursor:pointer;
+}
+
+/* Call to action responsive to height and width */
+@media (max-height: 450px) {
+    #call-to-action {
+        padding: var(--smaller-content-gap) var(--side-padding);
+        margin: var(--smaller-content-gap);
+    }
+    
+    #call-to-action h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Call to action responsive to narrow widths */
+@media (max-width: 500px) {
+    #call-to-action {
+        padding: var(--content-gap) 1rem;
+        margin: 2.5rem 2.5rem;
+    }
 }
 
 /* Contact form */

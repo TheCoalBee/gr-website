@@ -83,7 +83,7 @@ export default function ImageCarousel({
 
   // When transition ends, if we're on a clone we snap to the correct real slide
   const onTransitionEnd = () => {
-    // Don't set isAnimating here; handled by setTimeout
+
     if (!hasMany) return;
     // index can be 0 (first clone) -> snap to count (real last)
     if (index === 0) {
