@@ -21,7 +21,7 @@ function Navbar() {
         <nav id="nav">
             <Link to="/">
                 <img loading="lazy"
-                    src={"G&R Constructors, Inc_Option-01.png"}
+                    src={"G&R Constructors, Inc_Option-01.webp"}
                     alt="G&R Logo"
                 />
             </Link>

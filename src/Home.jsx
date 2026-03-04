@@ -16,7 +16,7 @@ function Home() {
   return (
     <main id="home">
       <div className="background-container">
-        <img loading="lazy" className="background" src="home-background.png" alt="" />
+        <img loading="lazy" className="background" src="home-background.webp" alt="" />
       </div>
       <Hero />
 
@@ -24,19 +24,19 @@ function Home() {
           <ContentBlock 
             alignment="left" 
             wordContent={<ContentText header="Building with Precision" paragraph="At G&R Constructors, integrity isn't a slogan, it's how we work. We show up, we're honest, and we keep our word. Our crew takes pride in commercial carpentry done safely and done right, with solid production that drives the projects and maintains schedules."/>}
-            imageContent={<img loading="lazy" src="home-block-1.png"/>}
+            imageContent={<img loading="lazy" src="home-block-1.webp"/>}
             theme="light"
           />
           <ContentBlock 
             alignment="right" 
             wordContent={<ContentText header="Trusted Experience, Lasting Results" paragraph="We take care of our people and take pride in the craftsmanship we bring to every project. We stay focused, communicate openly, and put in the kind of steady, reliable work that earns respect on and off the jobsite. Because for us, it's simple: when you work with integrity, focus on safety, and deliver consistent results, trust follows — and that's what we aim to build on every project."/>}
-            imageContent={<img loading="lazy" src="home-block-2.png" />}
+            imageContent={<img loading="lazy" src="home-block-2.webp" />}
             theme="dark"
           />
           <ContentBlock 
             alignment="left" 
             wordContent={<ContentText header="Your Vision, Our Commitment" paragraph="We believe every build begins with a vision. At G&R Constructors, we work closely with clients to turn ideas into reality, ensuring clear communication and dedication at every stage. Your goals become our mission, and your success is the foundation we build upon."/>}
-            imageContent={<img loading="lazy" src="home-block-3.png"/>}
+            imageContent={<img loading="lazy" src="home-block-3.webp"/>}
             theme="light"
           />
         </ContentSection>

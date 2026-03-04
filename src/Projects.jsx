@@ -14,7 +14,7 @@ function Projects({imgUrl}) {
       title: "Westside Library Expansion Project",
       measure: "11,384 sq. ft",
       images: [
-        "Archibald Library.png",
+        "Archibald Library.webp",
       ],
       scope: [
         "Acoustical Ceiling Tile",
@@ -25,7 +25,7 @@ function Projects({imgUrl}) {
       title: "Granger Junior High School",
       measure: "15,652 sq. ft",
       images: [
-        "Granger JHS Building.png",
+        "Granger JHS Building.webp",
       ],
       scope: [
         "Exterior Composite Cladding"
@@ -42,7 +42,7 @@ function Projects({imgUrl}) {
         <ContentBlock 
             alignment="left" 
             wordContent={<ContentText header="Our Portfolio" paragraph="Our portfolio reflects a commitment to excellence and precision in every project we undertake. Each engagement is approached with careful planning, innovative thinking, and attention to detail to ensure measurable results and lasting value. We take pride in delivering solutions that not only meet expectations but consistently exceed them."/>}
-            imageContent={<ImageCarousel images={["Archibald Library.png", "Granger JHS Building.png"]} />}
+            imageContent={<ImageCarousel images={["Archibald Library.webp", "Granger JHS Building.webp"]} />}
             theme="dark"
           />
 

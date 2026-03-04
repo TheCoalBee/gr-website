@@ -64,7 +64,7 @@ function Footer() {
 
 			<section id="footer-legal">
 				<Link to="/">
-					<img loading="lazy" src={'G&R Constructors all white.png'} alt="" />
+					<img loading="lazy" src={'G&R Constructors all white.webp'} alt="" />
 				</Link>
 
 				<p>© 2025 G&R Constructors. All rights reserved.</p>

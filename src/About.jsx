@@ -20,19 +20,19 @@ function About({imgUrl}) {
         {
           name: "Alex Ayala",
           role: "Controller",
-          picture: "EBP5769Antz.jpg",
+          picture: "EBP5769Antz.webp",
           offset: "0 10%"
         },
         {
           name: "Jackie Duran",
           role: "Accounting",
-          picture: "winegardner-5593.jpg",
+          picture: "winegardner-5593.webp",
           offset: "0 12%"
         },
         {
           name: "Frankie Henderson",
           role: "Labor Compliance and Payroll",
-          picture: "EBP5645Antz.jpg",
+          picture: "EBP5645Antz.webp",
           offset: "0 23%"
         }
       ]
@@ -43,13 +43,13 @@ function About({imgUrl}) {
         {
           name: "Steve Grode",
           role: "President",
-          picture: "winegardner-5495.png",
+          picture: "winegardner-5495.webp",
           offset: "0% 30%",
         },
         {
           name: "Armando Ramirez",
           role: "Project Estimator",
-          picture: "EBP5705Antz.jpg",
+          picture: "EBP5705Antz.webp",
           offset: "0% 10%",
         },
         {
@@ -70,13 +70,13 @@ function About({imgUrl}) {
        <ContentBlock 
             alignment="left" 
             wordContent={<ContentText header="The Team That Builds Your Vision" paragraph="G&R Constructors was founded on a simple idea: great work comes from great people. Behind every successful project is a team that makes it happen. Our skilled professionals combine innovation, precision, and teamwork to deliver results you can rely on every time."/>}
-            imageContent={<img loading="lazy" src="about-us-block-1.png"/>}
+            imageContent={<img loading="lazy" src="about-us-block-1.webp"/>}
             theme="light"
           />
           <ContentBlock 
             alignment="right" 
             wordContent={<ContentText header="Built on a Strong Foundation" paragraph="G&R Constructors was created by a team of lifelong builders who share a commitment to doing things the right way. With a focus on precision, reliability, and craftsmanship, the company has grown from a small partnership into a trusted provider of residential, commercial, and custom construction services. Today, G&R continues to build with integrity — delivering projects that stand the test of time."/>}
-            imageContent={<img loading="lazy" src="about-us-block-2.png"/>}
+            imageContent={<img loading="lazy" src="about-us-block-2.webp"/>}
             theme="dark"
           />
 

@@ -26,8 +26,6 @@ export default function ImageCarousel({
   // Build display array: [lastClone, ...images, firstClone]
   const display = hasMany ? [imgs[count - 1], ...imgs, imgs[0]] : [...imgs];
 
-  // Helpers to move
-
   // Helper to block navigation during animation
   const startAnimationBlock = useCallback(() => {
     setIsAnimating(true);
@@ -65,6 +63,20 @@ export default function ImageCarousel({
     return () => clearInterval(timerRef.current);
   }, [isPlaying, autoplayDelay, hasMany]);
 
+  // Pause autoplay when page visibility changes
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setIsPlaying(false);
+      } else {
+        setIsPlaying(Boolean(autoplay) && hasMany);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [autoplay, hasMany]);
+
   // Pause on hover (mouse only)
   const onMouseEnter = () => setIsPlaying(false);
   const onMouseLeave = () => setIsPlaying(Boolean(autoplay) && hasMany);
@@ -84,7 +96,7 @@ export default function ImageCarousel({
       // force reflow then restore transition (so next transforms will animate)
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          if (el) el.style.transition = "";
+          if (el) el.style.transition = "transform 300ms ease";
         });
       });
     } else if (index === count + 1) {
@@ -95,7 +107,7 @@ export default function ImageCarousel({
       setIndex(1);
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          if (el) el.style.transition = "";
+          if (el) el.style.transition = "transform 300ms ease";
         });
       });
     }
